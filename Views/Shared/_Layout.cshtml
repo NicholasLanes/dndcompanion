@@ -3,8 +3,6 @@
 }
 <!DOCTYPE html>
 <html>
-<!DOCTYPE html>
-<html>
     <!--Head section-->
     <head>
         <!--Metadata-->
@@ -15,46 +13,52 @@
         <script src="~/lib/jquery/jquery.min.js"></script>
         <!--Bootstrap stylesheet-->
         <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
-        
         <!--Popper.js-->
         <script src="~/lib/popper.js/popper.min.js"></script>
+        <script src="~/lib/popper.js/popper.js"></script>
+        <script src="~/lib/popper.js/popper-utils.js"></script>
+
         <!--Bootstrap scripts-->
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
         <!--JQuery Validate-->
         <script src="~/lib/jquery-validate/dist/jquery.validate.min.js"></script>
         <!--JQuery Validate unobtrusive-->
         <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js/jquery.validate.unobtrusive.min.js"></script>
-        </head>
+    </head>
 
     <!--Body section | Beginning of visible page content-->
-    <body>
+    <body class="container-fluid">
         <!--Navigation Menu/Bar becomes vertical on small screens-->
-        <nav class="navbar navbar-expand-sm bg-light">
+        <nav class="navbar fixed-top navbar-dark navbar-expand-sm bg-dark">
             <!--Brand-->
             <a class="navbar-brand" href="~/Home/Index/">D&D</a>
-            <ul class="navbar-nav">
+            <ul class="nav navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="~/Home/Index/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="~/Home/Index/">Characters</a>
+                    <a class="nav-link" href="~/Home/Characters/">Characters</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="~/Home/Index/">Dice</a>
+                    <a class="nav-link" href="~/Home/Dice/">Dice</a>
                 </li>
                 <!--Dropdown-->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Assignments
                     </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href=="~/Assignment6_1/Index/">Assignment 6.1</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="~/Chapter7Assignment/Index/">Assignment 6.1</a>
                     </div>
                 </li>
             </ul>
         </nav>
-        @RenderBody()
+        <header class="text-center">
+            <h1>@ViewBag.Heading</h1>
+            <h2>@ViewBag.SubHeading</h2>
+        </header>
+        <div class="ml-5 mt-5">
+            @RenderBody()
+        </div>
     </body>
-</html>
-
 </html>

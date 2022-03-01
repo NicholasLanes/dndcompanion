@@ -17,5 +17,13 @@ namespace dnd.Controllers
             var users = Context.Users.OrderBy(m => m.UserId).ToList();
             return View(users);
         }        
+        public IActionResult Characters()
+        {
+            return View();
+        }
+        public IActionResult Dice()
+        {
+            return View();
+        }
     }
 }

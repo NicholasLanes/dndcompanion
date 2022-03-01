@@ -1,14 +1,29 @@
-﻿@{
+﻿@using dnd.Models.Chapter7Assignment
+@model Student
+@{
     ViewBag.Title = "Assignment 6.1";
     ViewBag.Heading = "Assignment 6.1";
     ViewBag.SubHeading = "Chapter7Assignment/Index";
     Layout = "_Layout";
+
+    
 }
 <!DOCTYPE html>
 <html>
     <!--Body section | Beginning of visible page content-->
     <body>
-        <h1>@ViewBag.Heading</h1>
-        <h2>@ViewBag.SubHeading</h2>
-    </body>
+        <h1 class="text-center">@ViewBag.Heading</h1>
+        <h2 class="text-center">@ViewBag.SubHeading</h2>
+        <div class="d-flex flex-column justify-content-center">
+            <div asp-validation-summary="All">
+                <p class="text-center">You do not have a sufficient access level to view this data.</p>
+            </div>
+        <form asp-action="Index" method="post" class="align-self-center">
+                <label asp-for="AccessLevel">Access Level: </label>
+                <input type="number" id="acc" name="acc" />
+                <button class=btn btn-primary asp-action="List" type="submit">Confirm</button>
+                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </form>
+        </div>
+</body>
 </html>

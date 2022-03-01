@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using dnd.Models.User;
 
 namespace dnd.Migrations
 {
     [DbContext(typeof(UserContext))]
-    partial class UserContextModelSnapshot : ModelSnapshot
+    [Migration("20220228214656_Student")]
+    partial class Student
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,9 +26,6 @@ namespace dnd.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
-
-                    b.Property<int>("AccessLevel")
-                        .HasColumnType("int");
 
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
@@ -45,7 +44,6 @@ namespace dnd.Migrations
                         new
                         {
                             Id = 1,
-                            AccessLevel = 10,
                             FirstName = "Nicholas",
                             Grade = "A",
                             LastName = "Lanes"
@@ -53,7 +51,6 @@ namespace dnd.Migrations
                         new
                         {
                             Id = 2,
-                            AccessLevel = 8,
                             FirstName = "James",
                             Grade = "B",
                             LastName = "Smith"
@@ -61,7 +58,6 @@ namespace dnd.Migrations
                         new
                         {
                             Id = 3,
-                            AccessLevel = 5,
                             FirstName = "John",
                             Grade = "C",
                             LastName = "Smith"
@@ -69,7 +65,6 @@ namespace dnd.Migrations
                         new
                         {
                             Id = 4,
-                            AccessLevel = 1,
                             FirstName = "Sebastian",
                             Grade = "A",
                             LastName = "Bach"
@@ -77,7 +72,6 @@ namespace dnd.Migrations
                         new
                         {
                             Id = 5,
-                            AccessLevel = 2,
                             FirstName = "Samuel",
                             Grade = "B",
                             LastName = "Jackson"

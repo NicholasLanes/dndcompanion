@@ -17,35 +17,40 @@ namespace dnd.Models.User
                     Id = 1,
                     FirstName = "Nicholas",
                     LastName = "Lanes",
-                    Grade = "A"
+                    Grade = "A",
+                    AccessLevel = 10
                 },
                 new Student
                 {
                     Id=2,
                     FirstName ="James",
                     LastName ="Smith",
-                    Grade="B"
+                    Grade="B",
+                    AccessLevel=8
                 },
                 new Student
                 {
                     Id = 3,
                     FirstName = "John",
                     LastName ="Smith",
-                    Grade="C"
+                    Grade="C",
+                    AccessLevel=5
                 },
                 new Student
                 {
                     Id = 4,
                     FirstName = "Sebastian",
                     LastName="Bach",
-                    Grade="A"
+                    Grade="A",
+                    AccessLevel=1
                 },
                 new Student
                 {
                     Id = 5,
                     FirstName = "Samuel",
                     LastName="Jackson",
-                    Grade="B"
+                    Grade="B",
+                    AccessLevel=2
                 }
                 );
             modelBuilder.Entity<User>().HasData(
