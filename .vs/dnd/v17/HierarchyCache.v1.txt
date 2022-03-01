@@ -1,0 +1,1005 @@
+﻿++Solution 'dnd' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:dnd.sln
+++dnd
+i:{00000000-0000-0000-0000-000000000000}:dnd
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\dnd\
+++Connected Services 
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:>835
+++SQL Server Database (ConnectionStrings:UserContext)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:>857
+++Dependencies
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:>834
+++Analyzers
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:analyzers
+++Frameworks
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:frameworks
+++Packages
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:packages
+++Properties
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\properties\
+++launchSettings.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\properties\launchsettings.json
+++wwwroot
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\
+++lib
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\unix\lib\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win\lib\
+++Controllers
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\controllers\
+++Chapter7Assignment
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\controllers\chapter7assignment\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\models\chapter7assignment\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\chapter7assignment\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\chapter7assignment\
+++HomeController.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\controllers\homecontroller.cs
+++Migrations
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\migrations\
+++20220228082309_Initial.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\migrations\20220228082309_initial.cs
+++20220228214656_Student.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\migrations\20220228214656_student.cs
+++20220301010053_StudentAccessLevel.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\migrations\20220301010053_studentaccesslevel.cs
+++UserContextModelSnapshot.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\migrations\usercontextmodelsnapshot.cs
+++Models
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\models\
+++Student.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\models\chapter7assignment\student.cs
+++User
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\models\user\
+++User.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\models\user\user.cs
+++UserContext.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\models\user\usercontext.cs
+++Views
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\
+++Index.cshtml
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\chapter7assignment\index.cshtml
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\home\index.cshtml
+++List.cshtml
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\chapter7assignment\list.cshtml
+++Home
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\home\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\home\
+++Characters.cshtml
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\home\characters.cshtml
+++Dice.cshtml
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\home\dice.cshtml
+++Shared
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\shared\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\shared\
+++_ViewImports.cshtml
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\_viewstart.cshtml
+++.gitattributes
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.gitattributes
+++appsettings.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\appsettings.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\appsettings.json
+++libman.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\libman.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\libman.json
+++Program.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\program.cs
+++README.md
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\readme.md
+++Startup.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\startup.cs
+++SQL Server Database dependency with connectionId 'ConnectionStrings:UserContext' is detected
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:>858
+++Microsoft.AspNetCore.Analyzers
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\users\nick\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.1\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\microsoft.netcore.app
+++Microsoft.EntityFrameworkCore.SqlServer (5.0.0)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:>859
+++Microsoft.EntityFrameworkCore.Tools (5.0.0)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:>860
+++bootstrap
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\
+++jquery
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery\
+++jquery-validate
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\
+++jquery-validation-unobtrusive
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validation-unobtrusive\
+++popper.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\popper.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\esm\popper.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\umd\popper.js
+++Chapter7AssignmentController.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\controllers\chapter7assignment\chapter7assignmentcontroller.cs
+++20220228082309_Initial.Designer.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\migrations\20220228082309_initial.designer.cs
+++20220228214656_Student.Designer.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\migrations\20220228214656_student.designer.cs
+++20220301010053_StudentAccessLevel.Designer.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\migrations\20220301010053_studentaccesslevel.designer.cs
+++_Layout.cshtml
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\views\shared\_layout.cshtml
+++appsettings.Development.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\appsettings.development.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\appsettings.development.json
+++css
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\
+++js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\js\
+++core.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery\core.js
+++jquery.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery\jquery.js
+++localization
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\
+++additional-methods.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\additional-methods.js
+++jquery.validate.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\jquery.validate.js
+++jquery.validate.unobtrusive.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++esm
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\esm\
+++umd
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\umd\
+++popper-utils.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\popper-utils.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\esm\popper-utils.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\umd\popper-utils.js
+++bootstrap.css
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap.css
+++bootstrap-grid.css
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap-reboot.css
+++bootstrap.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\js\bootstrap.js
+++jquery.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery\jquery.min.js
+++jquery.slim.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery\jquery.slim.js
+++messages_ar.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ar.js
+++messages_az.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_az.js
+++messages_bg.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_bg.js
+++messages_bn_BD.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_bn_bd.js
+++messages_ca.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ca.js
+++messages_cs.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_cs.js
+++messages_da.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_da.js
+++messages_de.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_de.js
+++messages_el.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_el.js
+++messages_es.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_es.js
+++messages_es_AR.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_es_ar.js
+++messages_es_PE.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_es_pe.js
+++messages_et.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_et.js
+++messages_eu.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_eu.js
+++messages_fa.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_fa.js
+++messages_fi.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_fi.js
+++messages_fr.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_fr.js
+++messages_ge.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ge.js
+++messages_gl.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_gl.js
+++messages_he.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_he.js
+++messages_hr.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_hr.js
+++messages_hu.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_hu.js
+++messages_hy_AM.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_hy_am.js
+++messages_id.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_id.js
+++messages_is.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_is.js
+++messages_it.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_it.js
+++messages_ja.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ja.js
+++messages_ka.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ka.js
+++messages_kk.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_kk.js
+++messages_ko.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ko.js
+++messages_lt.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_lt.js
+++messages_lv.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_lv.js
+++messages_mk.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_mk.js
+++messages_my.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_my.js
+++messages_nl.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_nl.js
+++messages_no.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_no.js
+++messages_pl.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_pl.js
+++messages_pt_BR.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_pt_br.js
+++messages_pt_PT.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_pt_pt.js
+++messages_ro.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ro.js
+++messages_ru.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ru.js
+++messages_sd.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sd.js
+++messages_si.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_si.js
+++messages_sk.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sk.js
+++messages_sl.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sl.js
+++messages_sr.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sr.js
+++messages_sr_lat.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sr_lat.js
+++messages_sv.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sv.js
+++messages_th.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_th.js
+++messages_tj.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_tj.js
+++messages_tr.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_tr.js
+++messages_uk.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_uk.js
+++messages_ur.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ur.js
+++messages_vi.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_vi.js
+++messages_zh.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_zh.js
+++messages_zh_TW.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_zh_tw.js
+++methods_de.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_de.js
+++methods_es_CL.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_es_cl.js
+++methods_fi.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_fi.js
+++methods_it.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_it.js
+++methods_nl.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_nl.js
+++methods_pt.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_pt.js
+++additional-methods.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\additional-methods.min.js
+++jquery.validate.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\jquery.validate.min.js
+++jquery.validate.unobtrusive.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++popper.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\popper.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\esm\popper.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\umd\popper.js.map
+++popper.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\popper.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\esm\popper.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\umd\popper.min.js
+++popper-utils.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\popper-utils.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\esm\popper-utils.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\umd\popper-utils.js.map
+++popper-utils.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\popper-utils.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\esm\popper-utils.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\umd\popper-utils.min.js
+++bootstrap.css.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap.css.map
+++bootstrap.min.css
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap.min.css
+++bootstrap-grid.css.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap-grid.min.css
+++bootstrap-reboot.css.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap-reboot.min.css
+++bootstrap.bundle.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\js\bootstrap.bundle.js
+++bootstrap.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\js\bootstrap.js.map
+++bootstrap.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\js\bootstrap.min.js
+++jquery.min.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery\jquery.min.map
+++jquery.slim.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery\jquery.slim.min.js
+++messages_ar.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ar.min.js
+++messages_az.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_az.min.js
+++messages_bg.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_bg.min.js
+++messages_bn_BD.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_bn_bd.min.js
+++messages_ca.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ca.min.js
+++messages_cs.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_cs.min.js
+++messages_da.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_da.min.js
+++messages_de.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_de.min.js
+++messages_el.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_el.min.js
+++messages_es.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_es.min.js
+++messages_es_AR.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_es_ar.min.js
+++messages_es_PE.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_es_pe.min.js
+++messages_et.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_et.min.js
+++messages_eu.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_eu.min.js
+++messages_fa.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_fa.min.js
+++messages_fi.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_fi.min.js
+++messages_fr.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_fr.min.js
+++messages_ge.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ge.min.js
+++messages_gl.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_gl.min.js
+++messages_he.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_he.min.js
+++messages_hr.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_hr.min.js
+++messages_hu.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_hu.min.js
+++messages_hy_AM.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_hy_am.min.js
+++messages_id.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_id.min.js
+++messages_is.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_is.min.js
+++messages_it.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_it.min.js
+++messages_ja.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ja.min.js
+++messages_ka.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ka.min.js
+++messages_kk.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_kk.min.js
+++messages_ko.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ko.min.js
+++messages_lt.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_lt.min.js
+++messages_lv.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_lv.min.js
+++messages_mk.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_mk.min.js
+++messages_my.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_my.min.js
+++messages_nl.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_nl.min.js
+++messages_no.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_no.min.js
+++messages_pl.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_pl.min.js
+++messages_pt_BR.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_pt_br.min.js
+++messages_pt_PT.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_pt_pt.min.js
+++messages_ro.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ro.min.js
+++messages_ru.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ru.min.js
+++messages_sd.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sd.min.js
+++messages_si.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_si.min.js
+++messages_sk.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sk.min.js
+++messages_sl.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sl.min.js
+++messages_sr.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sr.min.js
+++messages_sr_lat.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sr_lat.min.js
+++messages_sv.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_sv.min.js
+++messages_th.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_th.min.js
+++messages_tj.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_tj.min.js
+++messages_tr.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_tr.min.js
+++messages_uk.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_uk.min.js
+++messages_ur.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_ur.min.js
+++messages_vi.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_vi.min.js
+++messages_zh.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_zh.min.js
+++messages_zh_TW.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\messages_zh_tw.min.js
+++methods_de.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_de.min.js
+++methods_es_CL.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_es_cl.min.js
+++methods_fi.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_fi.min.js
+++methods_it.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_it.min.js
+++methods_nl.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_nl.min.js
+++methods_pt.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery-validate\localization\methods_pt.min.js
+++popper.min.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\popper.min.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\esm\popper.min.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\umd\popper.min.js.map
+++popper-utils.min.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\popper-utils.min.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\esm\popper-utils.min.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\popper.js\umd\popper-utils.min.js.map
+++bootstrap.min.css.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap.min.css.map
+++bootstrap-grid.min.css.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap-grid.min.css.map
+++bootstrap-reboot.min.css.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\css\bootstrap-reboot.min.css.map
+++bootstrap.bundle.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js
+++bootstrap.min.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\js\bootstrap.min.js.map
+++jquery.slim.min.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\jquery\jquery.slim.min.map
+++bootstrap.bundle.min.js.map
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js.map
+++.vs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\
+++sd
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\sd\
+++ProjectSettings.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\projectsettings.json
+++slnx.sqlite
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\slnx.sqlite
+++VSWorkspaceState.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\vsworkspacestate.json
+++config
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\dnd\config\
+++DesignTimeBuild
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\dnd\designtimebuild\
+++v17
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\dnd\v17\
+++project-colors.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\dnd\project-colors.json
+++applicationhost.config
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\dnd\config\applicationhost.config
+++.dtbcache.v2
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\dnd\designtimebuild\.dtbcache.v2
+++.futdcache.v1
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\.vs\dnd\v17\.futdcache.v1
+++bin
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\
+++Debug
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\
+++net5.0
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\release\net5.0\
+++ref
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\ref\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\ref\
+++runtimes
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\
+++dnd.deps.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\dnd.deps.json
+++dnd.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\dnd.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\ref\dnd.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\ref\dnd.dll
+++dnd.exe
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\dnd.exe
+++dnd.pdb
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\dnd.pdb
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.pdb
+++dnd.runtimeconfig.dev.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\dnd.runtimeconfig.dev.json
+++dnd.runtimeconfig.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\dnd.runtimeconfig.json
+++dnd.Views.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\dnd.views.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.views.dll
+++dnd.Views.pdb
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\dnd.views.pdb
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.views.pdb
+++Humanizer.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\humanizer.dll
+++Microsoft.Data.SqlClient.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.data.sqlclient.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\unix\lib\netcoreapp3.1\microsoft.data.sqlclient.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win\lib\netcoreapp3.1\microsoft.data.sqlclient.dll
+++Microsoft.EntityFrameworkCore.Abstractions.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.entityframeworkcore.abstractions.dll
+++Microsoft.EntityFrameworkCore.Design.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.entityframeworkcore.design.dll
+++Microsoft.EntityFrameworkCore.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.entityframeworkcore.dll
+++Microsoft.EntityFrameworkCore.Relational.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.entityframeworkcore.relational.dll
+++Microsoft.EntityFrameworkCore.SqlServer.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.entityframeworkcore.sqlserver.dll
+++Microsoft.Identity.Client.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.identity.client.dll
+++Microsoft.IdentityModel.JsonWebTokens.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.identitymodel.jsonwebtokens.dll
+++Microsoft.IdentityModel.Logging.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.identitymodel.logging.dll
+++Microsoft.IdentityModel.Protocols.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.identitymodel.protocols.dll
+++Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.identitymodel.protocols.openidconnect.dll
+++Microsoft.IdentityModel.Tokens.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\microsoft.identitymodel.tokens.dll
+++Newtonsoft.Json.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\newtonsoft.json.dll
+++System.Configuration.ConfigurationManager.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\system.configuration.configurationmanager.dll
+++System.IdentityModel.Tokens.Jwt.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\system.identitymodel.tokens.jwt.dll
+++System.Runtime.Caching.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\system.runtime.caching.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\system.runtime.caching.dll
+++System.Security.Cryptography.ProtectedData.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\system.security.cryptography.protecteddata.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\system.security.cryptography.protecteddata.dll
+++unix
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\unix\
+++win
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win\
+++win-arm
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-arm\
+++win-arm64
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-arm64\
+++win-x64
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-x64\
+++win-x86
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-x86\
+++native
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-arm\native\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-arm64\native\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-x64\native\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-x86\native\
+++netcoreapp3.1
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\unix\lib\netcoreapp3.1\
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win\lib\netcoreapp3.1\
+++netstandard2.0
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\
+++Microsoft.Data.SqlClient.SNI.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-arm\native\microsoft.data.sqlclient.sni.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-arm64\native\microsoft.data.sqlclient.sni.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-x64\native\microsoft.data.sqlclient.sni.dll
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-x86\native\microsoft.data.sqlclient.sni.dll
+++Microsoft.Data.SqlClient.SNI.pdb
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-arm\native\microsoft.data.sqlclient.sni.pdb
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-arm64\native\microsoft.data.sqlclient.sni.pdb
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-x64\native\microsoft.data.sqlclient.sni.pdb
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\bin\debug\net5.0\runtimes\win-x86\native\microsoft.data.sqlclient.sni.pdb
+++dnd.sln
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\dnd.sln
+++obj
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\
+++Release
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\release\
+++dnd.csproj.nuget.dgspec.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\dnd.csproj.nuget.dgspec.json
+++dnd.csproj.nuget.g.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\dnd.csproj.nuget.g.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\dnd.csproj.nuget.g.props
+++dnd.csproj.nuget.g.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\dnd.csproj.nuget.g.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\dnd.csproj.nuget.g.targets
+++project.assets.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\project.assets.json
+++project.nuget.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\project.nuget.cache
+++Razor
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\
+++staticwebassets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\staticwebassets\
+++.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\.netcoreapp,version=v5.0.assemblyattributes.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\release\net5.0\.netcoreapp,version=v5.0.assemblyattributes.cs
+++apphost.exe
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\apphost.exe
+++dnd.AssemblyInfo.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.assemblyinfo.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\release\net5.0\dnd.assemblyinfo.cs
+++dnd.AssemblyInfoInputs.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.assemblyinfoinputs.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\release\net5.0\dnd.assemblyinfoinputs.cache
+++dnd.assets.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.assets.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\release\net5.0\dnd.assets.cache
+++dnd.csproj.AssemblyReference.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.csproj.assemblyreference.cache
+++dnd.csproj.CopyComplete
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.csproj.copycomplete
+++dnd.csproj.CoreCompileInputs.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.csproj.corecompileinputs.cache
+++dnd.csproj.FileListAbsolute.txt
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.csproj.filelistabsolute.txt
+++dnd.GeneratedMSBuildEditorConfig.editorconfig
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.generatedmsbuildeditorconfig.editorconfig
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\release\net5.0\dnd.generatedmsbuildeditorconfig.editorconfig
+++dnd.genruntimeconfig.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.genruntimeconfig.cache
+++dnd.MvcApplicationPartsAssemblyInfo.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.mvcapplicationpartsassemblyinfo.cache
+++dnd.RazorAssemblyInfo.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.razorassemblyinfo.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\release\net5.0\dnd.razorassemblyinfo.cache
+++dnd.RazorAssemblyInfo.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.razorassemblyinfo.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\release\net5.0\dnd.razorassemblyinfo.cs
+++dnd.RazorCoreGenerate.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.razorcoregenerate.cache
+++dnd.RazorTargetAssemblyInfo.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.razortargetassemblyinfo.cache
+++dnd.RazorTargetAssemblyInfo.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.razortargetassemblyinfo.cs
+++dnd.TagHelpers.input.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.taghelpers.input.cache
+++dnd.TagHelpers.output.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\dnd.taghelpers.output.cache
+++project.razor.json
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\project.razor.json
+++dnd.StaticWebAssets.Manifest.cache
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\staticwebassets\dnd.staticwebassets.manifest.cache
+++_ViewImports.cshtml.g.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\_viewimports.cshtml.g.cs
+++_ViewStart.cshtml.g.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\_viewstart.cshtml.g.cs
+++Index.cshtml.g.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\chapter7assignment\index.cshtml.g.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\home\index.cshtml.g.cs
+++List.cshtml.g.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\chapter7assignment\list.cshtml.g.cs
+++Characters.cshtml.g.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\home\characters.cshtml.g.cs
+++Dice.cshtml.g.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\home\dice.cshtml.g.cs
+++_Layout.cshtml.g.cs
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\obj\debug\net5.0\razor\views\shared\_layout.cshtml.g.cs
+++Imports
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:>863
+++Sdk.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\sdk\sdk.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.illink.tasks\sdk\sdk.props
+++Sdk.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\sdk\sdk.targets
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\Sdk)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\sdk\sdk.props
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\Sdk)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\sdk\sdk.targets
+++Microsoft.Common.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.props
+++Microsoft.NET.Sdk.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.props
+++Sdk.Razor.CurrentVersion.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\sdk.razor.currentversion.props
+++Microsoft.NET.Sdk.Web.ProjectSystem.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.projectsystem.props
+++Microsoft.NET.Sdk.Publish.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\microsoft.net.sdk.publish.props
+++Microsoft.NET.Sdk.BeforeCommon.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.beforecommon.targets
+++Microsoft.CSharp.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.targets
+++Microsoft.NET.Sdk.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.targets
+++Microsoft.NET.Compatibility.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\nuget.build.tasks.pack\build\nuget.build.tasks.pack.targets
+++Sdk.Razor.CurrentVersion.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\sdk.razor.currentversion.targets
+++Microsoft.NET.Sdk.Web.ProjectSystem.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.projectsystem.targets
+++Microsoft.NET.Sdk.Publish.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\microsoft.net.sdk.publish.targets
+++Microsoft.NuGet.ImportBefore.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\imports\microsoft.common.props\importbefore\microsoft.nuget.importbefore.props
+++NuGet.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.props
+++Microsoft.NET.Sdk.DefaultItems.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.supportedtargetframeworks.props
+++Microsoft.NET.SupportedPlatforms.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.supportedplatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.windowssdksupportedtargetplatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.props
+++Microsoft.NET.ILLink.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.illink.props
+++Microsoft.NET.Compatibility.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.props
+++Microsoft.NET.PackTool.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.props
+++Microsoft.NET.PackProjectTool.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.props
+++Microsoft.NET.Windows.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.windows.props
+++Sdk.Razor.StaticAssets.ProjectSystem.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\sdk\sdk.razor.staticassets.projectsystem.props
+++Microsoft.TypeScript.Default.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.default.props
+++Microsoft.NET.Sdk.Web.DefaultItems.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.defaultitems.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultassemblyinfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultoutputpaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importpublishprofile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.targetframeworkinference.targets
+++Microsoft.NET.Sdk.Razor.BeforeCommon.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.beforecommon.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.runtimeidentifierinference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.eoltargetframeworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.nugetofflinecache.targets
+++Microsoft.Managed.Before.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.currentversion.targets
+++Microsoft.Managed.After.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.after.targets
+++Microsoft.NET.Sdk.Common.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.common.targets
+++Microsoft.PackageDependencyResolution.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.packagedependencyresolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.frameworkreferenceresolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.disablestandardframeworkresolution.targets
+++Microsoft.NET.DesignerSupport.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.designersupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generateassemblyinfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generateglobalusings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generatesupportedruntime.targets
+++Microsoft.NET.ComposeStore.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.composestore.targets
+++Microsoft.NET.CrossGen.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.crossgen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.obsoletereferences.targets
+++Microsoft.NET.Publish.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.publish.targets
+++Microsoft.NET.PackTool.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.targets
+++Microsoft.NET.PackProjectTool.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.preservecompilationcontext.targets
+++Microsoft.NET.ConflictResolution.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.conflictresolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.targets
+++Microsoft.NET.ILLink.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.illink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.analyzers.targets
+++Microsoft.NET.Compatibility.Common.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.common.targets
+++Microsoft.NET.Sdk.Razor.Compilation.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.compilation.targets
+++Microsoft.NET.Sdk.Razor.Configuration.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.configuration.targets
+++Microsoft.NET.Sdk.Razor.CodeGeneration.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.codegeneration.targets
+++Microsoft.NET.Sdk.Razor.Component.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.component.targets
+++Microsoft.NET.Sdk.Razor.StaticWebAssets.5_0.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.staticwebassets.5_0.targets
+++Microsoft.NET.Sdk.Razor.ScopedCss.5_0.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.scopedcss.5_0.targets
+++Microsoft.NET.Sdk.Razor.GenerateAssemblyInfo.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.generateassemblyinfo.targets
+++Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.mvcapplicationpartsdiscovery.targets
+++Microsoft.NET.Sdk.Razor.DesignTime.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\razor\microsoft.net.sdk.razor.designtime.targets
+++Microsoft.TypeScript.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.targets
+++Microsoft.TypeScript.DotNetCore.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.dotnetcore.targets
+++Microsoft.Web.Designtime.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed.web\microsoft.web.designtime.targets
+++Default.pubxml
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\publishprofiles\default.pubxml
+++Microsoft.NET.Sdk.Publish.ComputeFiles.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\computetargets\microsoft.net.sdk.publish.computefiles.targets
+++Microsoft.NET.Sdk.Publish.FilterFiles.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\copytargets\microsoft.net.sdk.publish.filterfiles.targets
+++Microsoft.NET.Sdk.Publish.CopyFiles.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\copytargets\microsoft.net.sdk.publish.copyfiles.targets
+++Microsoft.NET.Sdk.Publish.TransformFiles.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\transformtargets\microsoft.net.sdk.publish.transformfiles.targets
+++Microsoft.NET.Sdk.Publish.FileSystem.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\publishtargets\microsoft.net.sdk.publish.filesystem.targets
+++Microsoft.NET.Sdk.DotNetCLITool.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\dotnetclitooltargets\microsoft.net.sdk.dotnetclitool.targets
+++Microsoft.EntityFrameworkCore.Design.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\users\nick\.nuget\packages\microsoft.entityframeworkcore.design\5.0.0\build\netcoreapp3.0\microsoft.entityframeworkcore.design.props
+++Microsoft.NuGet.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\nuget\17.0\microsoft.nuget.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\microsoft.netcoresdk.bundledversions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.windowsforms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.wpf.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain)
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain\workloadmanifest.targets
+++Microsoft.CSharp.Core.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.csharp.core.targets
+++Microsoft.CSharp.DesignTime.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.csharp.designtime.targets
+++Microsoft.Common.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.targets
+++Microsoft.ServiceModel.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.servicemodel.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.servicemodel.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\microsoft.netcoresdk.bundledclitools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultpackageconflictoverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.props
+++Microsoft.CodeAnalysis.NetAnalyzers.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.targets
+++Microsoft.NET.ILLink.Tasks.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.illink.tasks\build\microsoft.net.illink.tasks.props
+++System.Windows.Forms.Analyzers.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\system.windows.forms.analyzers.props
+++Microsoft.Managed.Core.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.targets
+++Microsoft.Managed.DesignTime.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.managed.designtime.targets
+++Microsoft.Common.CurrentVersion.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.currentversion.targets
+++Microsoft.Managed.Core.CurrentVersions.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.currentversions.targets
+++Microsoft.Cpp.VCLibs120Universal.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importbefore\microsoft.cpp.vclibs120universal.targets
+++Microsoft.Net.CoreRuntime.ImportBefore.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importbefore\microsoft.net.coreruntime.importbefore.targets
+++Microsoft.NetNative.ImportBefore.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importbefore\microsoft.netnative.importbefore.targets
+++dnd.csproj.user
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:b:\desktop\dndcompanion\dnd.csproj.user
+++Microsoft.NET.props
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.net.props
+++Microsoft.CodeAnalysis.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\codeanalysis\microsoft.codeanalysis.targets
+++Microsoft.Xaml.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.xaml.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.workflowbuildextensions.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.workflowbuildextensions.targets
+++Microsoft.TeamTest.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\teamtest\microsoft.teamtest.targets
+++NuGet.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.targets
+++Microsoft.DesktopBridge.ImportAfter.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.desktopbridge.importafter.targets
+++Microsoft.Docker.ImportAfter.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.docker.importafter.targets
+++Microsoft.NET.Build.Extensions.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.net.build.extensions.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\microsoft.net.build.extensions\microsoft.net.build.extensions.targets
+++Microsoft.Net.CoreRuntime.ImportAfter.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.net.coreruntime.importafter.targets
+++Microsoft.NetNative.ImportAfter.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.netnative.importafter.targets
+++Microsoft.NuGet.ImportAfter.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.nuget.importafter.targets
+++Microsoft.VisualStudio.Azure.Fabric.ServiceProject.ImportAfter.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.visualstudio.azure.fabric.serviceproject.importafter.targets
+++Microsoft.Web.ImportAfter.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.web.importafter.targets
+++Xamarin.Common.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\xamarin.common.targets
+++Microsoft.DesktopBridge.Common.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\desktopbridge\microsoft.desktopbridge.common.targets
+++Microsoft.Docker.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\sdks\microsoft.docker.sdk\build\microsoft.docker.targets
+++Microsoft.VisualStudio.Azure.Fabric.ServiceProject.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\service fabric tools\microsoft.visualstudio.azure.fabric.serviceproject.targets
+++Microsoft.Web.IISSupport.targets
+i:{f19ccbf8-8197-4f0e-bb9b-748731954984}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed.web\microsoft.web.iissupport.targets
