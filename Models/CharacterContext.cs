@@ -2,6 +2,7 @@
 using dnd.Models.Characters;
 using dnd.Models.Classes;
 using dnd.Models.Races;
+using dnd.Models.Session;
 using Microsoft.EntityFrameworkCore;
 
 namespace dnd.Models
@@ -14,6 +15,7 @@ namespace dnd.Models
         public DbSet<Character> Characters { get; set; }
         public DbSet<Class> Classes { get; set; }
         public DbSet<Race> Races { get; set; }
+        public DbSet<User> Users { get; set; }
 
         // overriding OnModelCreating method which accepts a ModelBuilder object
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -23,6 +25,7 @@ namespace dnd.Models
             modelBuilder.ApplyConfiguration(new AlignmentConfig());
             modelBuilder.ApplyConfiguration(new ClassConfig());
             modelBuilder.ApplyConfiguration(new RaceConfig());
+            modelBuilder.ApplyConfiguration(new UserConfig());
 
         }
 
