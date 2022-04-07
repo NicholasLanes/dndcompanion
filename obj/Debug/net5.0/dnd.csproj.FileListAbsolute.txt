@@ -194,8 +194,6 @@ B:\Desktop\dndcompanion\obj\Debug\net5.0\staticwebassets\dnd.StaticWebAssets.Man
 B:\Desktop\dndcompanion\obj\Debug\net5.0\dnd.TagHelpers.input.cache
 B:\Desktop\dndcompanion\obj\Debug\net5.0\dnd.TagHelpers.output.cache
 B:\Desktop\dndcompanion\obj\Debug\net5.0\dnd.RazorCoreGenerate.cache
-B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Chapter7Assignment\Index.cshtml.g.cs
-B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Chapter7Assignment\List.cshtml.g.cs
 B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Home\Characters.cshtml.g.cs
 B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Home\Dice.cshtml.g.cs
 B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs

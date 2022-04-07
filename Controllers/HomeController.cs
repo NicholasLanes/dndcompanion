@@ -1,4 +1,4 @@
-﻿using dnd.Models.User;
+﻿using dnd.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
@@ -7,15 +7,14 @@ namespace dnd.Controllers
     public class HomeController : Controller
     {
       
-        private UserContext Context { get; set; }
-        public HomeController(UserContext ctx)
+        private CharacterContext Context { get; set; }
+        public HomeController(CharacterContext ctx)
         {
             Context = ctx;
         }
         public IActionResult Index()
         {
-            var users = Context.Users.OrderBy(m => m.UserId).ToList();
-            return View(users);
+            return View();
         }        
         public IActionResult Characters()
         {
