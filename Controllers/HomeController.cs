@@ -1,4 +1,5 @@
 ﻿using dnd.Models;
+using dnd.Models.Characters;
 using dnd.Models.Session;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
@@ -54,10 +55,47 @@ namespace dnd.Controllers
             }
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public IActionResult CreateUser()
+        {
+            return View("CreateUser");
+        }
+        // Create User Post Method
+        [HttpPost]
+        public IActionResult CreateUser(User user)
+        {
+            // If there are no issues with validation
+            if (ModelState.IsValid) 
+            {
+                Context.Users.Add(user); // add user
+                Context.SaveChanges(); // save user
+                // Returns user to the Characters view
+                return View("Characters"); 
+            }
+            return RedirectToAction("CreateUser");
+        }
 
         public IActionResult Characters()
         {
+            return View("Characters");
+        }
+        [HttpGet]
+        public IActionResult CreateCharacter()
+        {
             return View();
+        }
+        [HttpPost]
+        public IActionResult CreateCharacter(Character character)
+        {
+            // If there are no issues with validation
+            if (ModelState.IsValid)
+            {
+                Context.Characters.Add(character); // add user
+                Context.SaveChanges(); // save user
+                // Returns user to the Characters view
+                return View("Characters");
+            }
+            return View("CreateCharacter");
         }
         public IActionResult Dice()
         {

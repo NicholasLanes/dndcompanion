@@ -210,3 +210,4 @@ B:\Desktop\dndcompanion\obj\Debug\net5.0\dnd.pdb
 B:\Desktop\dndcompanion\obj\Debug\net5.0\dnd.genruntimeconfig.cache
 B:\Desktop\dndcompanion\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Home\CreateUser.cshtml.g.cs
+B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Home\CreateCharacter.cshtml.g.cs
