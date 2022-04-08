@@ -19,6 +19,53 @@ namespace dnd.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.1");
 
+            modelBuilder.Entity("dnd.Models.Abilities.Ability", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Abilities");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Strength"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Dexterity"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Constitution"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Intelligence"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Wisdom"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Charisma"
+                        });
+                });
+
             modelBuilder.Entity("dnd.Models.Alignments.Alignment", b =>
                 {
                     b.Property<int>("Id")
@@ -88,7 +135,13 @@ namespace dnd.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("CharacterAlignment")
+                    b.Property<int?>("AlignmentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ArmorClass")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Bonds")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CharacterBackground")
@@ -106,13 +159,72 @@ namespace dnd.Migrations
                     b.Property<int?>("CharacterRaceId")
                         .HasColumnType("int");
 
+                    b.Property<int>("CharismaVal")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ConstitutionVal")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CurrentHealth")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DeathSaveFailure")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DeathSaveSuccess")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DexterityVal")
+                        .HasColumnType("int");
+
                     b.Property<int>("ExperiencePoints")
                         .HasColumnType("int");
 
-                    b.Property<string>("PlayerName")
+                    b.Property<string>("Flaws")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("HitDice")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ideals")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("InitiativeVal")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InspirationVal")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IntelligenceVal")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PersonalityTraits")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProficiencyBonusVal")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SavingThrows")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SpeedVal")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StrengthVal")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TemporaryHealth")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Traits")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("WisdomVal")
+                        .HasColumnType("int");
+
                     b.HasKey("CharacterId");
+
+                    b.HasIndex("AlignmentId");
 
                     b.HasIndex("CharacterClassId");
 
@@ -302,8 +414,140 @@ namespace dnd.Migrations
                         });
                 });
 
+            modelBuilder.Entity("dnd.Models.Skills.Skill", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("AbilityModifier")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Skills");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AbilityModifier = "Dexterity",
+                            Name = "Acrobatics"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AbilityModifier = "Wisdom",
+                            Name = "Animal Handling"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AbilityModifier = "Intelligence",
+                            Name = "Arcana"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AbilityModifier = "Strength",
+                            Name = "Athletics"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AbilityModifier = "Charisma",
+                            Name = "Deception"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AbilityModifier = "Intelligence",
+                            Name = "History"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            AbilityModifier = "Wisdom",
+                            Name = "Insight"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            AbilityModifier = "Charisma",
+                            Name = "Intimidation"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            AbilityModifier = "Intelligence",
+                            Name = "Investigation"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            AbilityModifier = "Wisdom",
+                            Name = "Medicine"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            AbilityModifier = "Intelligence",
+                            Name = "Nature"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            AbilityModifier = "Wisdom",
+                            Name = "Perception"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            AbilityModifier = "Charisma",
+                            Name = "Performance"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            AbilityModifier = "Charisma",
+                            Name = "Persuasion"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            AbilityModifier = "Intelligence",
+                            Name = "Religion"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            AbilityModifier = "Dexterity",
+                            Name = "Sleight of Hand"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            AbilityModifier = "Dexterity",
+                            Name = "Stealth"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            AbilityModifier = "Wisdom",
+                            Name = "Survival"
+                        });
+                });
+
             modelBuilder.Entity("dnd.Models.Characters.Character", b =>
                 {
+                    b.HasOne("dnd.Models.Alignments.Alignment", "Alignment")
+                        .WithMany()
+                        .HasForeignKey("AlignmentId");
+
                     b.HasOne("dnd.Models.Classes.Class", "CharacterClass")
                         .WithMany()
                         .HasForeignKey("CharacterClassId");
@@ -311,6 +555,8 @@ namespace dnd.Migrations
                     b.HasOne("dnd.Models.Races.Race", "CharacterRace")
                         .WithMany()
                         .HasForeignKey("CharacterRaceId");
+
+                    b.Navigation("Alignment");
 
                     b.Navigation("CharacterClass");
 
