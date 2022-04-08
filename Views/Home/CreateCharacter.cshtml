@@ -1,0 +1,59 @@
+﻿@using dnd.Models.Characters
+@model Character
+@{
+    ViewBag.Title = "Dungeons and Dragons Companion";
+    ViewBag.Heading = "Dungeons and Dragons Companion: Final Project";
+    ViewBag.SubHeading = "Character Sheet Creation";
+    Layout = "_Layout";
+}
+<h6>Follow Along To Create Your Character. </h6>
+<!--TODO Error Validation Summary-->
+<form asp-action="CreateCharacter" method="post">
+
+</form>
+<form asp-action="CreateCharacter" method="post">
+    <!-- Character Name Label and Input -->
+    <div class="form-group">
+        <label asp-for="CharacterName">Name: </label>
+        <input asp-for="CharacterName" class="form-control" />
+    </div>
+    <!-- Character Class Label and Input -->
+    <div class="form-group">
+        <label asp-for="CharacterClass">Sprint Number: </label>
+        <input asp-for="CharacterClass" class="form-control" />
+    </div>
+    <!-- Character Race Label and Input -->
+    <div class="form-group">
+        <label asp-for="CharacterRace">Point Value: </label>
+        <input asp-for="CharacterRace" class="form-control" />
+    </div>
+    <!-- Character Level Label and Input -->
+    <div class="form-group">
+        <label asp-for="CharacterLevel">Description: </label>
+        <input asp-for="CharacterLevel" class="form-control" />
+    </div>
+    <!-- Character Background Label and Input -->
+    <div class="form-group">
+        <label asp-for="CharacterBackground">Point Value: </label>
+        <input asp-for="CharacterBackground" class="form-control" />
+    </div>
+    <!-- Character Alignment Label and Input -->
+    <div class="form-group">
+        <label asp-for="CharacterAlignment">Description: </label>
+        <input asp-for="CharacterAlignment" class="form-control" />
+    </div>
+    <!-- Experience Points Label and Input -->
+    <div class="form-group">
+        <label asp-for="ExperiencePoints">Point Value: </label>
+        <input asp-for="ExperiencePoints" class="form-control" />
+    </div>
+    <!-- Character Level Label and Input -->
+    <div class="form-group">
+        <label asp-for="PlayerName">Description: </label>
+        <input asp-for="PlayerName" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">
+        Create Character
+    </button>
+    <a asp-action="Index" class="btn btn-primary">Cancel</a>
+</form>
