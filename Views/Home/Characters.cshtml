@@ -1,13 +1,13 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
 @{
     ViewBag.Title = "Dungeons and Dragons Companion";
     ViewBag.Heading = "Dungeons and Dragons Companion: Final Project";
-    ViewBag.SubHeading = "Characters";
+    ViewBag.SubHeading = "Existing Characters";
     Layout = "_Layout";
 }
-
-<a asp-action="Add" class="btn-link">
+<!--Link that takes the user to the Create a Character action-->
+<a asp-action="CreateCharacter" class="btn-link">
     <h6 style="text-align:center;">Create a New Character Sheet</h6>
 </a>
+<!--List of All Character Sheets-->
+

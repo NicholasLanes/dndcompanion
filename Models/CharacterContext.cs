@@ -1,8 +1,10 @@
-﻿using dnd.Models.Alignments;
+﻿using dnd.Models.Abilities;
+using dnd.Models.Alignments;
 using dnd.Models.Characters;
 using dnd.Models.Classes;
 using dnd.Models.Races;
 using dnd.Models.Session;
+using dnd.Models.Skills;
 using Microsoft.EntityFrameworkCore;
 
 namespace dnd.Models
@@ -15,6 +17,8 @@ namespace dnd.Models
         public DbSet<Character> Characters { get; set; }
         public DbSet<Class> Classes { get; set; }
         public DbSet<Race> Races { get; set; }
+        public DbSet<Ability> Abilities { get; set; }
+        public DbSet<Skill> Skills { get; set; }
         public DbSet<User> Users { get; set; }
 
         // overriding OnModelCreating method which accepts a ModelBuilder object
@@ -25,6 +29,8 @@ namespace dnd.Models
             modelBuilder.ApplyConfiguration(new AlignmentConfig());
             modelBuilder.ApplyConfiguration(new ClassConfig());
             modelBuilder.ApplyConfiguration(new RaceConfig());
+            modelBuilder.ApplyConfiguration(new AbilityConfig());
+            modelBuilder.ApplyConfiguration(new SkillConfig());
             modelBuilder.ApplyConfiguration(new UserConfig());
 
         }
