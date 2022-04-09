@@ -186,6 +186,8 @@ B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\libman.json
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\dnd.dll
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\dnd.runtimeconfig.json
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\dnd.pdb
+B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.JsonPatch.dll
+B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -199,6 +201,7 @@ B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Pr
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
+B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.Bson.dll
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\System.Configuration.ConfigurationManager.dll
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
 B:\Desktop\dndcompanion\obj\Release\net5.0\PubTmp\Out\System.Runtime.Caching.dll

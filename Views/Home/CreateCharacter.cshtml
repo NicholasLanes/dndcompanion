@@ -19,35 +19,60 @@
     </div>
     <!-- Character Class Label and Input -->
     <div class="form-group">
-        <label asp-for="CharacterClass">Sprint Number: </label>
-        <input asp-for="CharacterClass" class="form-control" />
+        <label asp-for="CharacterClass">Class: </label>
+        <select asp-for="CharacterClass" class="form-control" asp-items="@(new SelectList(ViewBag.Classes, "Id", "Name"))">
+            <option value=""></option>
+        </select>
     </div>
     <!-- Character Race Label and Input -->
     <div class="form-group">
-        <label asp-for="CharacterRace">Point Value: </label>
-        <input asp-for="CharacterRace" class="form-control" />
+        <label asp-for="CharacterRace">Race: </label>
+        <select asp-for="CharacterRace" class="form-control" asp-items="@(new SelectList(ViewBag.Races, "Id", "Name"))">
+            <option value=""></option>
+        </select>
     </div>
     <!-- Character Level Label and Input -->
     <div class="form-group">
-        <label asp-for="CharacterLevel">Description: </label>
+        <label asp-for="CharacterLevel">Level: </label>
         <input asp-for="CharacterLevel" class="form-control" />
     </div>
     <!-- Character Background Label and Input -->
     <div class="form-group">
-        <label asp-for="CharacterBackground">Point Value: </label>
+        <label asp-for="CharacterBackground">Background: </label>
         <input asp-for="CharacterBackground" class="form-control" />
     </div>
     <!-- Character Alignment Label and Input -->
-    <div class="form-group">
-    </div>
+    <label asp-for="Alignment">Alignment: </label>
+        <select asp-for="Alignment" class="form-control" asp-items="@(new SelectList(ViewBag.Alignments, "Id", "Name"))">
+            <option value=""></option>
+        </select>
     <!-- Experience Points Label and Input -->
     <div class="form-group">
-        <label asp-for="ExperiencePoints">Point Value: </label>
+        <label asp-for="ExperiencePoints">Experience Points: </label>
         <input asp-for="ExperiencePoints" class="form-control" />
     </div>
-    <!-- Character Level Label and Input -->
-    <div class="form-group">
-    </div>
+    <!-- Strength -->
+    <!-- Dexterity -->
+    <!-- Constitution -->
+    <!-- Intelligence -->
+    <!-- Wisdom -->
+    <!-- Charisma -->
+    <!-- Inspiration -->
+    <!-- Proficiency Bonus -->
+    <!-- Saving Throws Type -->
+    <!-- Armor Class -->
+    <!-- Initiative -->
+    <!-- Speed -->
+    <!-- Current HP -->   
+    <!-- Temporary HP -->
+    <!-- Hit Dice -->
+    <!-- Successful Death Saves -->
+    <!-- Unsuccessful Death Saves -->
+    <!-- Personality Traits -->
+    <!-- Ideals -->
+    <!-- Bonds -->
+    <!-- Flaws -->
+    <!-- Traits -->
     <button type="submit" class="btn btn-primary">
         Create Character
     </button>

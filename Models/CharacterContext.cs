@@ -27,6 +27,7 @@ namespace dnd.Models
             // Calling the ApplyConfiguration class to import data from respective config classes
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new AlignmentConfig());
+            modelBuilder.ApplyConfiguration(new CharacterConfig());
             modelBuilder.ApplyConfiguration(new ClassConfig());
             modelBuilder.ApplyConfiguration(new RaceConfig());
             modelBuilder.ApplyConfiguration(new AbilityConfig());

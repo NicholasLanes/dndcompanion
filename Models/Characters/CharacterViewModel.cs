@@ -1,5 +1,6 @@
 ﻿using dnd.Models.Classes;
 using dnd.Models.Races;
+using System.Collections.Generic;
 
 namespace dnd.Models.Characters
 {
@@ -17,6 +18,6 @@ namespace dnd.Models.Characters
         public Character Character { get; set; }
         public Class Class { get; set; }
         public Race Race { get; set; }
-
+        public List<Character> Characters { get; set; }
     }
 }
