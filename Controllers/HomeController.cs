@@ -4,7 +4,7 @@ using dnd.Models.Session;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
-
+using System.Collections.Generic;
 
 namespace dnd.Controllers
 {
@@ -15,11 +15,63 @@ namespace dnd.Controllers
         {
             Context = ctx;
         }
-        [HttpGet]
-        public IActionResult Index()
+
+        // Index Result Logic
+        public IActionResult Index(string id)
         {
+            ViewBag.Abilities = Context.Abilities;
+            ViewBag.Alignments = Context.Alignments;
+            ViewBag.Classes = Context.Classes;
+            ViewBag.Races = Context.Races;
+            ViewBag.Skills = Context.Skills;
             return View("Index");
         }
+
+        // Characters Result Logic
+        public IActionResult Characters()
+        {
+            ViewBag.Abilities = Context.Abilities;
+            ViewBag.Alignments = Context.Alignments;
+            ViewBag.Classes = Context.Classes;
+            ViewBag.Races = Context.Races;
+            ViewBag.Skills = Context.Skills;
+            IQueryable<Character> query = Context.Characters;
+            ViewBag.Characters = query;
+            if (query.Count() > 0)
+            {
+                query = query.Where(t => t.CharacterId.ToString() != "");
+            }
+            var characters = query.ToList();
+            return View(characters);
+        }
+
+        // CreateCharacter Result Logic
+        [HttpGet]
+        public IActionResult CreateCharacter()
+        {
+            ViewBag.Abilities = Context.Abilities;
+            ViewBag.Alignments = Context.Alignments;
+            ViewBag.Characters = Context.Characters;
+            ViewBag.Classes = Context.Classes;
+            ViewBag.Races = Context.Races;
+            ViewBag.Skills = Context.Skills;
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CreateCharacter(Character character)
+        {
+            // If there are no issues with validation
+            if (ModelState.IsValid)
+            {
+                Context.Characters.Add(character); // add user
+                Context.SaveChanges(); // save user
+                // Returns user to the Characters view
+                return View("Characters");
+            }
+            return View("CreateCharacter");
+        }
+
+        // CreateUser Result Logic
         [HttpGet]
         public IActionResult CreateUser()
         {
@@ -39,12 +91,8 @@ namespace dnd.Controllers
             }
             return View("CreateUser");
         }
-        /*
-         * Login Post action queries the database for a user with the same username
-         * If the username and password match a single record in the database
-         * it will store the user information for the session and return them
-         * to the characters page where they can view and edit characters
-         */
+
+        // Login Result Logic
         [HttpGet]
         public IActionResult Login()
         {
@@ -65,43 +113,24 @@ namespace dnd.Controllers
                 // if query doesn't find a user, return to index
                 if (query.Count() < 1)
                 {
-                    return View("Index");
+                    return RedirectToAction("Index");
                 }
                 // if query finds more than one user (this should not happen), return to index
                 else if (query.Count() > 1)
                 {
-                    return View("Index");
+                    return RedirectToAction("Index");
                 }
                 // else there is a match, update session data and proceed to characters view
                 else
                 {
                     var session = new Session(HttpContext.Session);
                     session.SetUser(userAttempt);
-                    return View("Characters");
+                    return RedirectToAction("Characters");
                 }
             }
             return RedirectToAction("Index");
         }
-
-
-        [HttpGet]
-        public IActionResult CreateCharacter()
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult CreateCharacter(Character character)
-        {
-            // If there are no issues with validation
-            if (ModelState.IsValid)
-            {
-                Context.Characters.Add(character); // add user
-                Context.SaveChanges(); // save user
-                // Returns user to the Characters view
-                return View("Characters");
-            }
-            return View("CreateCharacter");
-        }
+        
         public IActionResult Dice()
         {
             return View();
