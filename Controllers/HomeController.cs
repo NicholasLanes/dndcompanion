@@ -5,103 +5,103 @@ using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
+using System;
 
 namespace dnd.Controllers
 {
     public class HomeController : Controller
     {
         private CharacterContext Context { get; set; }
-        public HomeController(CharacterContext ctx)
-        {
-            Context = ctx;
-        }
+        public HomeController(CharacterContext ctx) { Context = ctx; }
 
-        // Index Result Logic
-        public IActionResult Index(string id)
+        // Index Result Logic (Home Page)
+        public IActionResult Index()
         {
-            ViewBag.Abilities = Context.Abilities;
-            ViewBag.Alignments = Context.Alignments;
-            ViewBag.Classes = Context.Classes;
-            ViewBag.Races = Context.Races;
-            ViewBag.Skills = Context.Skills;
             return View("Index");
         }
 
-        // Characters Result Logic
+        // Characters Result Logic (List of Existing Characters Page)
         public IActionResult Characters()
         {
-            ViewBag.Abilities = Context.Abilities;
-            ViewBag.Alignments = Context.Alignments;
-            ViewBag.Classes = Context.Classes;
-            ViewBag.Races = Context.Races;
-            ViewBag.Skills = Context.Skills;
+            List<Character> characters = Context.Characters.ToList();
+            var session = new Session(HttpContext.Session);
             IQueryable<Character> query = Context.Characters;
-            ViewBag.Characters = query;
-            if (query.Count() > 0)
+            if (query.Any())
             {
-                query = query.Where(t => t.CharacterId.ToString() != "");
+                session.SetCharacterList(query.ToList());
+                return View(query.ToList());
             }
-            var characters = query.ToList();
-            return View(characters);
+            return View();
         }
 
-        // CreateCharacter Result Logic
+        // Create Character Get Result
         [HttpGet]
         public IActionResult CreateCharacter()
         {
-            ViewBag.Abilities = Context.Abilities;
-            ViewBag.Alignments = Context.Alignments;
-            ViewBag.Characters = Context.Characters;
-            ViewBag.Classes = Context.Classes;
-            ViewBag.Races = Context.Races;
-            ViewBag.Skills = Context.Skills;
+            ViewData["Abilities"] = Context.Abilities;
+            ViewData["Alignments"] = Context.Alignments;
+            ViewData["Characters"] = Context.Characters;
+            ViewData["Classes"] = Context.Classes;
+            ViewData["Races"] = Context.Races;
+            ViewData["Skills"] = Context.Skills;
             return View();
         }
+        // Create Character Post Result
         [HttpPost]
         public IActionResult CreateCharacter(Character character)
         {
-            // If there are no issues with validation
             if (ModelState.IsValid)
             {
-                Context.Characters.Add(character); // add user
-                Context.SaveChanges(); // save user
-                // Returns user to the Characters view
+                Context.Characters.Add(character);
+                Context.SaveChanges();
                 return View("Characters");
             }
             return View("CreateCharacter");
         }
 
-        // CreateUser Result Logic
+        
+        public IActionResult Detail(string id)
+        {
+            var session = new Session(HttpContext.Session);
+            IQueryable<Character> query = Context.Characters
+            .Where(x => x.CharacterId == Int32.Parse(id));
+            session.SetActiveCharacter(query.FirstOrDefault());
+            return View(query.FirstOrDefault());
+        }
+        
+
+
+        // Create User Get Result
         [HttpGet]
         public IActionResult CreateUser()
         {
             return View("CreateUser");
         }
+        // Create User Post Result
+        [HttpPost]
         public IActionResult CreateUser(User user)
         {
-            // If there are no issues with validation
             if (ModelState.IsValid)
             {
                 var session = new Session(HttpContext.Session);
                 session.SetUser(user);
-                Context.Users.Add(user); // add user to dbcontext
-                Context.SaveChanges(); // save context changes
-                // Returns user to the Characters view
+                Context.Users.Add(user); 
+                Context.SaveChanges(); 
                 return View("Characters");
             }
             return View("CreateUser");
         }
 
-        // Login Result Logic
+        // Login Get Result
         [HttpGet]
         public IActionResult Login()
         {
             return View("Index");
         }
+
         [HttpPost]
         public IActionResult Login(User userAttempt)
         {
-            // check for validation errors and proceed only if there are none
             if (ModelState.IsValid)
             {
                 // querying dbcontext to find matching user
@@ -110,27 +110,20 @@ namespace dnd.Controllers
                      where user.Username == userAttempt.Username
                      && user.Password == userAttempt.Password
                      select user);
-                // if query doesn't find a user, return to index
-                if (query.Count() < 1)
+
+                if (query.Count() != 1)
                 {
                     return RedirectToAction("Index");
                 }
-                // if query finds more than one user (this should not happen), return to index
-                else if (query.Count() > 1)
-                {
-                    return RedirectToAction("Index");
-                }
-                // else there is a match, update session data and proceed to characters view
-                else
-                {
-                    var session = new Session(HttpContext.Session);
-                    session.SetUser(userAttempt);
-                    return RedirectToAction("Characters");
-                }
+
+                var session = new Session(HttpContext.Session);
+                session.SetUser(userAttempt);
+                return RedirectToAction("Characters");
+
             }
             return RedirectToAction("Index");
         }
-        
+
         public IActionResult Dice()
         {
             return View();

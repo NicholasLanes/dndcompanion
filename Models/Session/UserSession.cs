@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace dnd.Models.Session
 {
@@ -10,7 +11,7 @@ namespace dnd.Models.Session
         // Override with Newtonsoft Json to convert objects passed into the session with these methods
         public static void SetObject<T>(this ISession session, string key, T value)
         {
-            session.SetString(key,JsonConvert.SerializeObject(value));
+            session.SetString(key, JsonConvert.SerializeObject(value));
         }
         public static T GetObject<T>(this ISession session, string key)
         {
@@ -21,33 +22,36 @@ namespace dnd.Models.Session
     public class Session
     {
         // Declarations
-        private const string SessionKey = "key";
-        private const string CharactersKey = "key";
+        private const string UserSessionKey = "user";
+        private const string CharacterListKey = "char";
+        private const string ActiveCharacterKey = "active";
+        private const string UserListKey = "users";
         private ISession session { get; set; }
         // Session declares a Session object and passes value to private session object
         public Session(ISession s)
         {
             this.session = s;
         }
-        // Method to set pass a user object to the session
-        public void SetUser(User user)
-        {
-            session.SetObject(SessionKey, user);
-        }
-        // Method to pass a list of characters to the session
-        public void SetCharacters(List<Character> characters)
-        {
-            session.SetObject(CharactersKey, characters);
-        }
-        // Method GetCharacters() to pass a character object from the session to the controller
-        public List<Character> GetCharacters() => session.GetObject<List<Character>>(CharactersKey);
-        // Method GetUser() to pass a character object from the session to the controller
-        public User GetUser() => session.GetObject<User>(SessionKey);
+
+        // Setter Methods to set pass a objects to the session
+        public void SetUser(User user) { session.SetObject(UserSessionKey, user); }
+        public void SetUserList(List<User> users) { session.SetObject(UserListKey, users); }
+        public void SetActiveCharacter(Character character) { session.SetObject(ActiveCharacterKey, character); }
+        public void SetCharacterList(List<Character> characters) { session.SetObject(CharacterListKey, characters); }
+
+        // Getter Methods to pass session objects to the controller
+        public User GetUser() => session.GetObject<User>(UserSessionKey);
+        public List<User> GetUserList() => session.GetObject<List<User>>(UserListKey);
+        public Character GetActiveCharacter() => session.GetObject<Character>(ActiveCharacterKey);
+        public List<Character> GetCharacterList() => session.GetObject<List<Character>>(CharacterListKey);
+
         // Call this to remove session data (for a logout or clear characters option)
         public void RemoveSessionData()
         {
-            session.Remove(SessionKey);
-            session.Remove(CharactersKey);
+            session.Remove(UserSessionKey);
+            session.Remove(UserListKey);
+            session.Remove(ActiveCharacterKey);
+            session.Remove(CharacterListKey);
         }
 
 
