@@ -1,5 +1,5 @@
 ﻿@using dnd.Models.Characters
-@model IEnumerable<Character>
+@model List<Character>
 @{
     ViewBag.Title = "Dungeons and Dragons Companion";
     ViewBag.Heading = "Dungeons and Dragons Companion: Final Project";
@@ -31,7 +31,7 @@
                 <td>@character.CharacterLevel</td>
                 <td>@character.Alignment</td>
                 <td>
-                    <form asp-action="ViewCharacterSheet" method="post">
+                    <form asp-action="Detail" method="post" asp-route-id="@character.CharacterId">
                         <button type="submit" class="btn btn-primary">
                             View Full Character Sheet
                         </button>

@@ -52,27 +52,65 @@
         <input asp-for="ExperiencePoints" class="form-control" />
     </div>
     <!-- Strength -->
-    <!-- Dexterity -->
-    <!-- Constitution -->
-    <!-- Intelligence -->
-    <!-- Wisdom -->
-    <!-- Charisma -->
-    <!-- Inspiration -->
-    <!-- Proficiency Bonus -->
-    <!-- Saving Throws Type -->
-    <!-- Armor Class -->
-    <!-- Initiative -->
-    <!-- Speed -->
-    <!-- Current HP -->   
-    <!-- Temporary HP -->
-    <!-- Hit Dice -->
-    <!-- Successful Death Saves -->
-    <!-- Unsuccessful Death Saves -->
-    <!-- Personality Traits -->
-    <!-- Ideals -->
-    <!-- Bonds -->
-    <!-- Flaws -->
-    <!-- Traits -->
+    <div class="row">
+        <div class="col">
+            <label asp-for="StrengthVal">Base Strength Value: </label>
+            <input asp-for="StrengthVal" class="form-control" />
+        </div>
+        <div class="col">
+            <label asp-for="DexterityVal">Base Dexterity Value: </label>
+            <input asp-for="DexterityVal" class="form-control" />
+        </div>
+        <div class="col">
+            <label asp-for="ConstitutionVal">Base Constitution Value: </label>
+            <input asp-for="ConstitutionVal" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label asp-for="IntelligenceVal">Base Intelligence Value: </label>
+            <input asp-for="IntelligenceVal" class="form-control" />
+        </div>
+        <div class="col">
+            <label asp-for="WisdomVal">Base Wisdom Value: </label>
+            <input asp-for="WisdomVal" class="form-control" />
+        </div>
+        <div class="col">
+            <label asp-for="CharismaVal">Base Charisma Value: </label>
+            <input asp-for="CharismaVal" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label asp-for="InspirationVal">Inspiration Value: </label>
+            <input asp-for="InspirationVal" class="form-control" />
+        </div>
+        <div class="col">
+            <label asp-for="ProficiencyBonusVal">Proficiency Bonus Value: </label>
+            <input asp-for="ProficiencyBonusVal" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <label asp-for="PersonalityTraits">Personality Traits: </label>
+        <input asp-for="PersonalityTraits" class="form-control" />
+    </div>
+    <div class="row">
+        <label asp-for="Ideals">Ideals: </label>
+        <input asp-for="Ideals" class="form-control" />
+    </div>
+    <div class="row">
+        <label asp-for="Bonds">Bonds: </label>
+        <input asp-for="Bonds" class="form-control" />
+    </div>
+    <div class="row">
+        <label asp-for="Flaws">Flaws: </label>
+        <input asp-for="Flaws" class="form-control" />
+    </div>
+    <div class="row">
+        <label asp-for="Traits">Additional Character Traits: </label>
+        <input asp-for="Traits" class="form-control" />
+    </div>
+
     <button type="submit" class="btn btn-primary">
         Create Character
     </button>
