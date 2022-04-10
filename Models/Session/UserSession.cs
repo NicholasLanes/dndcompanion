@@ -25,7 +25,7 @@ namespace dnd.Models.Session
         private const string UserSessionKey = "user";
         private const string CharacterListKey = "char";
         private const string ActiveCharacterKey = "active";
-        private const string UserListKey = "users";
+
         private ISession session { get; set; }
         // Session declares a Session object and passes value to private session object
         public Session(ISession s)
@@ -35,13 +35,11 @@ namespace dnd.Models.Session
 
         // Setter Methods to set pass a objects to the session
         public void SetUser(User user) { session.SetObject(UserSessionKey, user); }
-        public void SetUserList(List<User> users) { session.SetObject(UserListKey, users); }
         public void SetActiveCharacter(Character character) { session.SetObject(ActiveCharacterKey, character); }
         public void SetCharacterList(List<Character> characters) { session.SetObject(CharacterListKey, characters); }
 
         // Getter Methods to pass session objects to the controller
         public User GetUser() => session.GetObject<User>(UserSessionKey);
-        public List<User> GetUserList() => session.GetObject<List<User>>(UserListKey);
         public Character GetActiveCharacter() => session.GetObject<Character>(ActiveCharacterKey);
         public List<Character> GetCharacterList() => session.GetObject<List<Character>>(CharacterListKey);
 
@@ -49,7 +47,6 @@ namespace dnd.Models.Session
         public void RemoveSessionData()
         {
             session.Remove(UserSessionKey);
-            session.Remove(UserListKey);
             session.Remove(ActiveCharacterKey);
             session.Remove(CharacterListKey);
         }

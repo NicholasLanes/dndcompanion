@@ -17,9 +17,23 @@ namespace dnd.Controllers
         // Index Result Logic (Home Page)
         public IActionResult Index()
         {
-            return View("Index");
-        }
 
+            var session = new Session(HttpContext.Session);
+            if (ViewBag.ActiveUser is null)
+            {
+                ViewBag.ActiveUser = new User();
+                ViewData["DisplayNone"] = "none";
+                ViewData["DisplayFormNone"] = "";
+            }
+            if (ViewBag.ActiveUser is not null)
+            {
+                ViewBag.ActiveUser = session.GetUser();
+                ViewData["DisplayNone"] = "";
+                ViewData["DisplayFormNone"] = "none";
+            }
+            session.SetUser(ViewBag.ActiveUser);
+            return View();
+        }
         // Characters Result Logic (List of Existing Characters Page)
         public IActionResult Characters()
         {
@@ -59,7 +73,7 @@ namespace dnd.Controllers
             return View("CreateCharacter");
         }
 
-        
+
         public IActionResult Detail(string id)
         {
             var session = new Session(HttpContext.Session);
@@ -68,7 +82,7 @@ namespace dnd.Controllers
             session.SetActiveCharacter(query.FirstOrDefault());
             return View(query.FirstOrDefault());
         }
-        
+
 
 
         // Create User Get Result
@@ -85,8 +99,8 @@ namespace dnd.Controllers
             {
                 var session = new Session(HttpContext.Session);
                 session.SetUser(user);
-                Context.Users.Add(user); 
-                Context.SaveChanges(); 
+                Context.Users.Add(user);
+                Context.SaveChanges();
                 return View("Characters");
             }
             return View("CreateUser");
@@ -105,23 +119,31 @@ namespace dnd.Controllers
             if (ModelState.IsValid)
             {
                 // querying dbcontext to find matching user
-                IQueryable<User> query =
-                    (from user in Context.Users
-                     where user.Username == userAttempt.Username
-                     && user.Password == userAttempt.Password
-                     select user);
-
-                if (query.Count() != 1)
-                {
-                    return RedirectToAction("Index");
-                }
-
+                IQueryable<User> query = Context.Users.Where(x => x.Username == userAttempt.Username && x.Password == userAttempt.Password);
                 var session = new Session(HttpContext.Session);
-                session.SetUser(userAttempt);
+                session.SetUser(query.FirstOrDefault());
+                ViewBag.ActiveUser = session.GetUser();
+                ViewData["DisplayNone"] = "";
+                ViewData["DisplayFormNone"] = "none";
                 return RedirectToAction("Characters");
-
             }
-            return RedirectToAction("Index");
+            else
+            {
+                ViewData["DisplayNone"] = "none";
+                ViewData["DisplayFormNone"] = "";
+                return RedirectToAction("Index");
+            }
+        }
+
+        public IActionResult Logout()
+        {
+            ViewBag.LoggedIn = false;
+            ViewBag.ActiveUser = null;
+            ViewData["DisplayNone"] = "none";
+            ViewData["DisplayFormNone"] = "";
+            var session = new Session(HttpContext.Session);
+            session.RemoveSessionData();
+            return View("Index");
         }
 
         public IActionResult Dice()

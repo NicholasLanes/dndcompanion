@@ -73,3 +73,4 @@ B:\Desktop\dndcompanion\bin\Release\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJs
 B:\Desktop\dndcompanion\bin\Release\net5.0\Newtonsoft.Json.Bson.dll
 B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Home\CreateCharacter.cshtml.g.cs
 B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Home\CreateUser.cshtml.g.cs
+B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Home\Detail.cshtml.g.cs
