@@ -43,14 +43,7 @@ namespace dnd.Controllers
         
 
 
-        public IActionResult Detail(string id)
-        {
-            var session = new Session(HttpContext.Session);
-            IQueryable<Character> query = Context.Characters
-            .Where(x => x.CharacterId == Int32.Parse(id));
-            session.SetActiveCharacter(query.FirstOrDefault());
-            return View(query.FirstOrDefault());
-        }
+     
 
 
 
@@ -97,7 +90,7 @@ namespace dnd.Controllers
                 ViewBag.ActiveUser = session.GetUser();
                 ViewData["DisplayNone"] = "";
                 ViewData["DisplayFormNone"] = "none";
-                return RedirectToAction("Characters");
+                return RedirectToAction("Characters/Index");
             }
             else
             {

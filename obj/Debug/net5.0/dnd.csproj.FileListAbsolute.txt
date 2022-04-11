@@ -212,6 +212,6 @@ B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Home\CreateUser.cshtml.g.cs
 B:\Desktop\dndcompanion\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 B:\Desktop\dndcompanion\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 B:\Desktop\dndcompanion\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
-B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Home\Detail.cshtml.g.cs
 B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Characters\Index.cshtml.g.cs
 B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Characters\CreateCharacter.cshtml.g.cs
+B:\Desktop\dndcompanion\obj\Debug\net5.0\Razor\Views\Characters\Detail.cshtml.g.cs

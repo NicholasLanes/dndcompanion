@@ -54,7 +54,6 @@ B:\Desktop\dndcompanion\obj\Release\net5.0\staticwebassets\dnd.StaticWebAssets.M
 B:\Desktop\dndcompanion\obj\Release\net5.0\dnd.TagHelpers.input.cache
 B:\Desktop\dndcompanion\obj\Release\net5.0\dnd.TagHelpers.output.cache
 B:\Desktop\dndcompanion\obj\Release\net5.0\dnd.RazorCoreGenerate.cache
-B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Home\Characters.cshtml.g.cs
 B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Home\Dice.cshtml.g.cs
 B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -71,6 +70,7 @@ B:\Desktop\dndcompanion\obj\Release\net5.0\dnd.genruntimeconfig.cache
 B:\Desktop\dndcompanion\bin\Release\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 B:\Desktop\dndcompanion\bin\Release\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 B:\Desktop\dndcompanion\bin\Release\net5.0\Newtonsoft.Json.Bson.dll
-B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Home\CreateCharacter.cshtml.g.cs
 B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Home\CreateUser.cshtml.g.cs
 B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Home\Detail.cshtml.g.cs
+B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Characters\CreateCharacter.cshtml.g.cs
+B:\Desktop\dndcompanion\obj\Release\net5.0\Razor\Views\Characters\Index.cshtml.g.cs

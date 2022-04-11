@@ -43,5 +43,15 @@ namespace dnd.Controllers
             }
             return View("CreateCharacter");
         }
+
+        // The detail action allows the user to view all of the properties attributed to the selected character sheet
+        public IActionResult Detail(string id)
+        {
+            var session = new Session(HttpContext.Session);
+            IQueryable<Character> query = Context.Characters
+            .Where(x => x.CharacterId == int.Parse(id));
+            session.SetActiveCharacter(query.FirstOrDefault());
+            return View(query.FirstOrDefault());
+        }
     }
 }
