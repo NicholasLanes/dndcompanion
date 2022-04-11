@@ -15,63 +15,32 @@ namespace dnd.Controllers
         public HomeController(CharacterContext ctx) { Context = ctx; }
 
         // Index Result Logic (Home Page)
-        public IActionResult Index()
+        public IActionResult Index(User user)
         {
-
             var session = new Session(HttpContext.Session);
-            if (ViewBag.ActiveUser is null)
+
+            if(ModelState.IsValid && user != null)
             {
-                ViewBag.ActiveUser = new User();
-                ViewData["DisplayNone"] = "none";
-                ViewData["DisplayFormNone"] = "";
-            }
-            if (ViewBag.ActiveUser is not null)
-            {
-                ViewBag.ActiveUser = session.GetUser();
+                session.SetUser(user);
                 ViewData["DisplayNone"] = "";
                 ViewData["DisplayFormNone"] = "none";
             }
-            session.SetUser(ViewBag.ActiveUser);
-            return View();
-        }
-        // Characters Result Logic (List of Existing Characters Page)
-        public IActionResult Characters()
-        {
-            List<Character> characters = Context.Characters.ToList();
-            var session = new Session(HttpContext.Session);
-            IQueryable<Character> query = Context.Characters;
-            if (query.Any())
+            else
             {
-                session.SetCharacterList(query.ToList());
-                return View(query.ToList());
+                user.Name = "";
+                user.Username = "";
+                user.Password = "";
+                user.IsAdmin = false;
+                session.SetUser(user);
+                user = session.GetUser();
+                ViewData["DisplayNone"] = "none";
+                ViewData["DisplayFormNone"] = "";
             }
-            return View();
+            return View("Index");
         }
+        
 
-        // Create Character Get Result
-        [HttpGet]
-        public IActionResult CreateCharacter()
-        {
-            ViewData["Abilities"] = Context.Abilities;
-            ViewData["Alignments"] = Context.Alignments;
-            ViewData["Characters"] = Context.Characters;
-            ViewData["Classes"] = Context.Classes;
-            ViewData["Races"] = Context.Races;
-            ViewData["Skills"] = Context.Skills;
-            return View();
-        }
-        // Create Character Post Result
-        [HttpPost]
-        public IActionResult CreateCharacter(Character character)
-        {
-            if (ModelState.IsValid)
-            {
-                Context.Characters.Add(character);
-                Context.SaveChanges();
-                return View("Characters");
-            }
-            return View("CreateCharacter");
-        }
+        
 
 
         public IActionResult Detail(string id)
@@ -119,7 +88,10 @@ namespace dnd.Controllers
             if (ModelState.IsValid)
             {
                 // querying dbcontext to find matching user
-                IQueryable<User> query = Context.Users.Where(x => x.Username == userAttempt.Username && x.Password == userAttempt.Password);
+                IQueryable<User> query = Context.Users.Where(
+                    x => x.Username == userAttempt.Username &&
+                    x.Password == userAttempt.Password);
+
                 var session = new Session(HttpContext.Session);
                 session.SetUser(query.FirstOrDefault());
                 ViewBag.ActiveUser = session.GetUser();
@@ -134,11 +106,9 @@ namespace dnd.Controllers
                 return RedirectToAction("Index");
             }
         }
-
         public IActionResult Logout()
         {
             ViewBag.LoggedIn = false;
-            ViewBag.ActiveUser = null;
             ViewData["DisplayNone"] = "none";
             ViewData["DisplayFormNone"] = "";
             var session = new Session(HttpContext.Session);

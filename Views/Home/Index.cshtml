@@ -5,29 +5,40 @@
     ViewBag.Heading = "Dungeons and Dragons Companion: Final Project";
     ViewBag.SubHeading = "Home Page";
     Layout = "_Layout";
+    if(ViewData["DisplayNone"].ToString() == "" && ViewData["DisplayFormNone"].ToString() == "")
+    {
+        ViewData["DisplayNone"] = "none";
+        ViewData["DisplayFormNone"] = "";
+    }
 }
-<div style="display:@ViewData["DisplayNone"]">
+<!-- This Div hides the content from the view by setting 'Display: none'
+    If Controller finds an active session, sets the ViewData["DisplayNone"] to "none" -->
+<div style="text-align:center; display:@ViewData["DisplayNone"]">
     <h4>You are already logged in!</h4>
-    <h6><a asp-action="Characters">Click to View and Create Characters.</a></h6>
-    <h6><a asp-action="Logout">Click to Log Out.</a></h6>
+        <h6><a asp-action="Logout">Click Here to Log Out.</a></h6>
+    <h6><a asp-route-controller="Characters" asp-action="Index">Click Here to View and Create Characters.</a></h6>
 </div>
-<!--Link to the CreateUser View-->
-<h6><a asp-action="CreateUser">Click Here to Create a User Profile</a></h6> 
+
+<!-- This Div hides the content from the view by setting 'Display: none'
+    If Controller does not find an active session, sets the ViewData["DisplayFormNone"] to "none"
+    which will hide the sign-in form until the user logs out -->
 <div style="display:@ViewData["DisplayFormNone"]">
-    <h6>Have an Account? Sign In:</h6>
-    <!--Form for Signing in With an Existing User Profile-->
+    <h4 style="text-align:center;">Sign In:</h4>
         <form asp-action="Login" method="post">
-            <div class="form-group">
+            <div class="form-group" style="padding:10px;">
                 <label>Username: </label>
                 <input class="form-control" asp-for="@Model.Username" />
             </div>
-            <div class="form-group">
+            <div class="form-group" style="padding:10px;">
                 <label>Password: </label>
                 <input type="password" class="form-control" asp-for="@Model.Password" />
             </div>
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-dark" style="margin:10px;">
                 Submit
             </button>
-            <a asp-action="Index" asp-route-id="" class="btn btn-secondary">Clear</a>
+            <a asp-action="Index" asp-route-id="" class="btn btn-secondary" style="margin:10px">Clear</a>
         </form>
 </div>
+
+<!--Link to the CreateUser View-->
+<h6 style="text-align:center;"><a asp-action="CreateUser">Click Here to Create a User Profile</a></h6> 

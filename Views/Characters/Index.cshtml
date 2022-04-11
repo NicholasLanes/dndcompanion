@@ -1,5 +1,8 @@
-﻿@using dnd.Models.Characters
-@model List<Character>
+﻿@using Microsoft.AspNetCore.Http
+@using System.Reflection
+@using dnd.Models.Characters
+@using dnd.Models.Session
+@model IEnumerable<Character>
 @{
     // Use these ViewBag values to change the header for the page
     ViewBag.Heading = "Dungeons and Dragons Companion: Final Project";
@@ -7,7 +10,7 @@
     Layout = "_Layout";
 }
 <!--Link that takes the user to the Create a Character action-->
-<a asp-action="CreateCharacter" class="btn-link">
+<a asp-route-controller="Characters" asp-action="CreateCharacter" class="btn-link">
     <h6 style="text-align:center;">Create a New Character Sheet</h6>
 </a>
 <!--List of All Character Sheets-->

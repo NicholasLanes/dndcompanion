@@ -6,11 +6,9 @@
     ViewBag.SubHeading = "Character Sheet Creation";
     Layout = "_Layout";
 }
-<h6>Follow Along To Create Your Character. </h6>
+<h5 style="text-align:center;">Follow Along To Create Your Character. </h6>
 <!--TODO Error Validation Summary-->
-<form asp-action="CreateCharacter" method="post">
 
-</form>
 <form asp-action="CreateCharacter" method="post">
     <!-- Character Name Label and Input -->
     <div class="form-group">
@@ -110,9 +108,10 @@
         <label asp-for="Traits">Additional Character Traits: </label>
         <input asp-for="Traits" class="form-control" />
     </div>
-
-    <button type="submit" class="btn btn-primary">
-        Create Character
-    </button>
-    <a asp-action="Index" class="btn btn-primary">Cancel</a>
+    <div style="display:flex; justify-content:space-evenly; margin:20px;">
+        <button type="submit" class="btn btn-dark">
+            Create Character
+        </button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
 </form>

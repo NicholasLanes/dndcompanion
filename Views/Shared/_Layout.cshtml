@@ -9,24 +9,17 @@
         <meta name="viewport" content="width=device-width" />
         <title>@ViewBag.Title</title>
         <!--Enabling client-side libraries-->
-        <!--JQuery-->
         <script src="~/lib/jquery/jquery.min.js"></script>
-        <!--Bootstrap stylesheet-->
         <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
-        <!--Popper.js-->
         <script src="~/lib/popper.js/popper.min.js"></script>
         <script src="~/lib/popper.js/popper.js"></script>
         <script src="~/lib/popper.js/popper-utils.js"></script>
 
-        <!--Bootstrap scripts-->
         <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
-        <!--JQuery Validate-->
         <script src="~/lib/jquery-validate/dist/jquery.validate.min.js"></script>
-        <!--JQuery Validate unobtrusive-->
         <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js/jquery.validate.unobtrusive.min.js"></script>
     </head>
 
-    <!--Body section | Beginning of visible page content-->
     <body class="container-fluid d-flex justify-content-center flex-wrap">
         <!--Navigation Menu/Bar becomes vertical on small screens-->
         <div class=flex-column>
@@ -36,10 +29,10 @@
             <a class="navbar-brand" href="~/Home/Index/">D&D</a>
             <ul class="nav navbar-nav d-flex flex-row mb-2">
                 <li class="nav-item ml-1 mr-1">
-                    <a class="nav-link" href="~/Home/Index/">Home</a>
+                    <a class="nav-link" asp-route-controller="Home" asp-route-action="Index">Home</a>
                 </li>
                 <li class="nav-item ml-1 mr-1">
-                    <a class="nav-link" asp-action="Characters">Characters</a>
+                    <a class="nav-link" asp-route-controller="Characters" asp-action="Index">Characters</a>
                 </li>
                 <li class="nav-item ml-1 mr-1">
                     <a class="nav-link" href="~/Home/Dice/">Dice</a>
