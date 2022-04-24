@@ -2,7 +2,7 @@
 @model Character
 @{
     // Use these ViewBag values to change the header for the page
-    ViewBag.Heading = Model.CharacterName.ToString();
+    //ViewBag.Heading = Model.CharacterName.ToString();
     ViewBag.SubHeading = "Detail View";
     Layout = "_Layout";
 }
@@ -24,8 +24,14 @@
     <h6>@Model.SpeedVal</h6>
     <h4>HP (Current/Max)</h4>
     <h6>@Model.CurrentHealth</h6>
+
     <h4>HP (Current/Temporary)</h4>
     <h6>@Model.TemporaryHealth</h6>
+    <form asp-action="EditHealth" asp-route-id="@Model.CharacterId">
+        <input id="hp_id" name="hp" />
+        <button type="submit">Update</button>
+    </form>
+
     <h4>XP</h4>
     <h6>@Model.ExperiencePoints</h6>
     <h4>Hit Die</h4>

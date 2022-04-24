@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "175lF0io27WZlUf3PUfN2zdfc2L9fqjAye+HgMJkX1OP7rttPTYT3oCmG1f6Q+IaybApWCIabIQOkl+FC6hRqA==",
+  "dgSpecHash": "JsPfQ2DQtOOg1udP6CLkLJMQyG5gjRjRqz9O6C2ar9LGjyeH1Cw6od2jZO2Nl6oilqDr0lvI/1++IgO1F3fRlA==",
   "success": true,
-  "projectFilePath": "B:\\Desktop\\dndcompanion\\dnd.csproj",
+  "projectFilePath": "B:\\Nick\\Documents\\MyPrograms\\dndcompanion\\dnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nick\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Nick\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.0\\microsoft.aspnetcore.jsonpatch.5.0.0.nupkg.sha512",

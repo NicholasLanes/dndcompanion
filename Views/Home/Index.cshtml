@@ -1,15 +1,10 @@
 ﻿@using dnd.Models.Session
-@model User
+@model IEnumerable<User>
 @{
     // Use these ViewBag values to change the header for the page
     ViewBag.Heading = "Dungeons and Dragons Companion: Final Project";
     ViewBag.SubHeading = "Home Page";
     Layout = "_Layout";
-    if(ViewData["DisplayNone"].ToString() == "" && ViewData["DisplayFormNone"].ToString() == "")
-    {
-        ViewData["DisplayNone"] = "none";
-        ViewData["DisplayFormNone"] = "";
-    }
 }
 <!-- This Div hides the content from the view by setting 'Display: none'
     If Controller finds an active session, sets the ViewData["DisplayNone"] to "none" -->
@@ -27,11 +22,11 @@
         <form asp-action="Login" method="post">
             <div class="form-group" style="padding:10px;">
                 <label>Username: </label>
-                <input class="form-control" asp-for="@Model.Username" />
+                <input class="form-control"  />
             </div>
             <div class="form-group" style="padding:10px;">
                 <label>Password: </label>
-                <input type="password" class="form-control" asp-for="@Model.Password" />
+                <input type="password" class="form-control"  />
             </div>
             <button type="submit" class="btn btn-dark" style="margin:10px;">
                 Submit

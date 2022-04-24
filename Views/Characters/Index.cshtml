@@ -2,7 +2,7 @@
 @using System.Reflection
 @using dnd.Models.Characters
 @using dnd.Models.Session
-@model IEnumerable<Character>
+@model IEnumerable<Character>;
 @{
     // Use these ViewBag values to change the header for the page
     ViewBag.Heading = "Dungeons and Dragons Companion: Final Project";
@@ -22,25 +22,29 @@
             <th>Race</th>
             <th>Level</th>
             <th>Alignment</th>
+            <th>HP(Current/Temp)</th>
         </tr>
     </thead>
     <tbody>
-        @foreach(Character character in Model)
+        @foreach (Character character in Model)
         {
-            <tr>
+           
+                <tr>
                 <td>@character.CharacterName</td>
                 <td>@character.CharacterClass</td>
                 <td>@character.CharacterRace</td>
                 <td>@character.CharacterLevel</td>
                 <td>@character.Alignment</td>
+                <td>@character.TemporaryHealth</td>
                 <td>
-                    <form asp-action="Detail" method="post" asp-route-id="@character.CharacterId">
+                    <form asp-action="Detail" asp-route-id="@character.CharacterId">
                         <button type="submit" class="btn btn-primary">
                             View Full Character Sheet
                         </button>
                     </form>
                 </td>
             </tr>
+            
         }
     </tbody>
 </table>

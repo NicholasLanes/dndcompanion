@@ -12,46 +12,68 @@ namespace dnd.Controllers
         private CharacterContext Context { get; set; }
         public CharactersController(CharacterContext ctx) { Context = ctx; }
 
-        // The Index action controls the Characters main page of the website
-        public IActionResult Index()
+        public IActionResult Index(string id)
         {
+            // Grab all the characters from CharacterContext
+            IQueryable<Character> query = 
+                Context.Characters.Where(x => x.CharacterLevel > 0); 
 
-            var session = new Session(HttpContext.Session);
-            // Query Database, Filtering out null charactername results (dummy records in SQL database)
-            IQueryable<Character> query = Context.Characters.Where(x => x.CharacterName != null);
-            if (query.Any())
-            {
-                session.SetCharacterList(query.ToList());
-                return View(query.ToList());
-            }
-            return View("Index");
+            // Pass the query into a list of characters
+            List<Character> characters = query.ToList();
+
+            // Send these characters to the View
+            return View(characters);
         }
 
-        // The CreateCharacter action controls the addition of characters in the CreateCharacter view
-        public IActionResult CreateCharacter(CharacterListViewModel characterListView)
+        [HttpGet]
+        public IActionResult CreateCharacter()
         {
             // These viewbag properties are for the dropdowns on the createcharacter sheet
             ViewBag.Alignments = Context.Alignments;
             ViewBag.Classes = Context.Classes;
             ViewBag.Races = Context.Races;
+            return View();
+        }
+        // The CreateCharacter post action controls the addition of characters in the CreateCharacter view
+        [HttpPost]
+        public IActionResult CreateCharacter(Character character)
+        {
             // If valid add the character to the db
-            if (ModelState.IsValid && characterListView.Character is not null)
+            if (ModelState.IsValid)
             {
-                Context.Characters.Add(characterListView.Character);
+                Context.Characters.Add(character);
                 Context.SaveChanges();
                 return View("Index");
             }
-            return View("CreateCharacter");
+            return View(character);
         }
 
         // The detail action allows the user to view all of the properties attributed to the selected character sheet
-        public IActionResult Detail(string id)
+        public IActionResult Detail(int id)
         {
-            var session = new Session(HttpContext.Session);
-            IQueryable<Character> query = Context.Characters
-            .Where(x => x.CharacterId == int.Parse(id));
-            session.SetActiveCharacter(query.FirstOrDefault());
-            return View(query.FirstOrDefault());
+            // Grab all the characters from CharacterContext
+            IQueryable<Character> query =
+                Context.Characters.Where(x => x.CharacterLevel > 0 && x.CharacterId == id);
+
+            // Assign the single query result to a character object
+            Character character = query.SingleOrDefault();
+
+            // Send this character to the view
+            return View(character);
+
+        }
+        public IActionResult EditHealth(int id, int hp)
+        {
+            Character character = Context.Characters.Where(x => x.CharacterLevel > 0 && x.CharacterId == id).FirstOrDefault();
+            if (ModelState.IsValid && character != null)
+            {
+                character.TemporaryHealth = hp;
+                Context.Characters.Update(character);
+                Context.SaveChanges();
+                return View("Detail", character);
+            }
+            return RedirectToAction("Index");
+
         }
     }
 }

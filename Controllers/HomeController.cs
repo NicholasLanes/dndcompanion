@@ -14,37 +14,12 @@ namespace dnd.Controllers
         private CharacterContext Context { get; set; }
         public HomeController(CharacterContext ctx) { Context = ctx; }
 
-        // Index Result Logic (Home Page)
-        public IActionResult Index(User user)
+        public IActionResult Index(string id)
         {
-            var session = new Session(HttpContext.Session);
-
-            if(ModelState.IsValid && user != null)
-            {
-                session.SetUser(user);
-                ViewData["DisplayNone"] = "";
-                ViewData["DisplayFormNone"] = "none";
-            }
-            else
-            {
-                user.Name = "";
-                user.Username = "";
-                user.Password = "";
-                user.IsAdmin = false;
-                session.SetUser(user);
-                user = session.GetUser();
-                ViewData["DisplayNone"] = "none";
-                ViewData["DisplayFormNone"] = "";
-            }
-            return View("Index");
+            IQueryable<User> query = Context.Users.AsQueryable(); // query = all users in dbcontext
+            IEnumerable<User> users = query.AsEnumerable();
+            return View(users);
         }
-        
-
-        
-
-
-     
-
 
 
         // Create User Get Result
