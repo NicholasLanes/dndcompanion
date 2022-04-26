@@ -8,6 +8,9 @@
 }
 <h3 style="text-align:center;">Character Detail View</h3>
 <div style="text-align:center; margin:10%; margin-top:auto;">
+    <form asp-action="DeleteCharacter" asp-route-id="@Model.CharacterId">
+        <button type="submit">DELETE CHARACTER</button>
+    </form>
     <table class="table table-bordered table-striped" style="text-align:center;">
         <thead>
             <tr>
@@ -36,6 +39,8 @@
                 <th>Maximum Health</th>
                 <th>Current Health</th>
                 <th>Update Current Health</th>
+@*                <th>Current Gold</th>
+                <th>Update Current Gold</th>*@
             </tr>
         </thead>
         <tbody>
@@ -50,6 +55,16 @@
                     </form>
                 </td>
             </tr>
+            @*<tr>
+                <td>@Model.CharacterBackground</td>
+                <td>@Model.CurrentGold</td>
+                <td>
+                    <form asp-action="EditGold" asp-route-id="@Model.CharacterId">
+                        <input id="gp_id" name="gp" />
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+            </tr>*@
         </tbody>
     </table>
     <table class="table table-bordered table-striped" style="text-align:center;">
@@ -57,6 +72,7 @@
             <tr>
                 <th>Speed</th>
                 <th>XP</th>
+                <th>Edit XP</th>
                 <th>Hit Die</th>
             </tr>
         </thead>
@@ -64,6 +80,12 @@
             <tr>
                 <td>@Model.SpeedVal</td>
                 <td>@Model.ExperiencePoints</td>
+                <td>
+                    <form asp-action="EditXP" asp-route-id="@Model.CharacterId">
+                        <input id="xp_id" name="xp" />
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
                 <td>@Model.HitDice</td>
             </tr>
         </tbody>

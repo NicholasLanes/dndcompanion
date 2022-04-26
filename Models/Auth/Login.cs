@@ -11,7 +11,7 @@ namespace dnd.Models.Auth
         [Required(ErrorMessage = "Password field is required. Please enter a password.")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-        public bool RememberMe { get; set; } = false;
+        public bool RememberMe { get; set; } = false; 
 
     }
 }

@@ -31,6 +31,7 @@ namespace dnd.Models.Characters
         public int SpeedVal { get; set; } = 5; // Speed Value
         public int CurrentHealth { get; set; } = 5; // Hit Point Maximum
         public int TemporaryHealth { get; set; } = 5; // Hit Point Current
+/*        public int CurrentGold { get; set; }*/
         public string HitDice { get; set; } = "D8"; // Which Die is rolled when the player attacks
         public int DeathSaveSuccess { get; set; } = 5; // Number of Successful Death Saves
         public int DeathSaveFailure { get; set; } = 5; // Number of Unsuccessful Death Saves
