@@ -131,5 +131,32 @@ namespace dnd.Controllers
             return RedirectToAction("Index");
 
         }
+        public IActionResult EditXP(int id, int xp)
+        {
+            Character character = Context.Characters.Where(x => x.CharacterLevel > 0 && x.CharacterId == id).FirstOrDefault();
+            if (ModelState.IsValid && character != null)
+            {
+                character.ExperiencePoints = xp;
+                Context.Characters.Update(character);
+                Context.SaveChanges();
+                return View("Detail", character);
+            }
+            return RedirectToAction("Index");
+
+        }
+        public IActionResult DeleteCharacter(int id)
+        {
+            Character character = Context.Characters.Where(x => x.CharacterLevel > 0 && x.CharacterId == id).FirstOrDefault();
+            if (ModelState.IsValid && character != null)
+            {
+                Context.Characters.Remove(character);
+                Context.SaveChanges();
+                IQueryable<Character> query =
+                Context.Characters.Where(x => x.CharacterLevel > 0);
+                List<Character> characters = query.ToList();
+                return View("Index", characters);
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
