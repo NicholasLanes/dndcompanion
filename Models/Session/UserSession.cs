@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace dnd.Models.Session
+namespace dnd.Models.Auth
 {
     public static class UserSession
     {
@@ -22,7 +22,6 @@ namespace dnd.Models.Session
     public class Session
     {
         // Declarations
-        private const string UserSessionKey = "user";
         private const string CharacterListKey = "char";
         private const string ActiveCharacterKey = "active";
 
@@ -34,19 +33,16 @@ namespace dnd.Models.Session
         }
 
         // Setter Methods to set pass a objects to the session
-        public void SetUser(User user) { session.SetObject(UserSessionKey, user); }
         public void SetActiveCharacter(Character character) { session.SetObject(ActiveCharacterKey, character); }
         public void SetCharacterList(List<Character> characters) { session.SetObject(CharacterListKey, characters); }
 
         // Getter Methods to pass session objects to the controller
-        public User GetUser() => session.GetObject<User>(UserSessionKey);
         public Character GetActiveCharacter() => session.GetObject<Character>(ActiveCharacterKey);
         public List<Character> GetCharacterList() => session.GetObject<List<Character>>(CharacterListKey);
 
         // Call this to remove session data (for a logout or clear characters option)
         public void RemoveSessionData()
         {
-            session.Remove(UserSessionKey);
             session.Remove(ActiveCharacterKey);
             session.Remove(CharacterListKey);
         }

@@ -3,13 +3,14 @@ using dnd.Models.Alignments;
 using dnd.Models.Characters;
 using dnd.Models.Classes;
 using dnd.Models.Races;
-using dnd.Models.Session;
+using dnd.Models.Auth;
 using dnd.Models.Skills;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace dnd.Models
 {
-    public class CharacterContext : DbContext
+    public class CharacterContext : IdentityDbContext<User>
     {
         // importing database context options
         public CharacterContext(DbContextOptions<CharacterContext> options) : base(options) { }
@@ -19,7 +20,6 @@ namespace dnd.Models
         public DbSet<Race> Races { get; set; }
         public DbSet<Ability> Abilities { get; set; }
         public DbSet<Skill> Skills { get; set; }
-        public DbSet<User> Users { get; set; }
 
         // overriding OnModelCreating method which accepts a ModelBuilder object
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -31,7 +31,6 @@ namespace dnd.Models
             modelBuilder.ApplyConfiguration(new RaceConfig());
             modelBuilder.ApplyConfiguration(new AbilityConfig());
             modelBuilder.ApplyConfiguration(new SkillConfig());
-            modelBuilder.ApplyConfiguration(new UserConfig());
 
         }
 

@@ -1,0 +1,127 @@
+﻿@using dnd.Models.Auth
+@model Register
+@{
+    ViewBag.Title = "Dungeons and Dragons Companion";
+    ViewBag.Heading = "Dungeons and Dragons Companion: Final Project";
+    ViewBag.SubHeading = "User Registration";
+    Layout = "_Layout";
+}
+<!--Error Validation Summary-->
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<!--Begin Register Form-->
+<form method="post" asp-controller="User" asp-action="Register">
+    <!--First Name-->
+    <div class="form-group row">
+        <div class="col">
+            <label>First Name:</label>
+        </div>
+        <div class="col">
+            <input asp-for="FirstName" class="form-control" />
+        </div>
+        <div class="col">
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+    </div>
+    <!--Last Name-->
+    <div class="form-group row">
+        <div class="col">
+            <label>Last Name:</label>
+        </div>
+        <div class="col">
+            <input asp-for="LastName" class="form-control" />
+        </div>
+        <div class="col">
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+    </div>
+    <!--UserName-->
+    <div class="form-group row">
+        <div class="col">
+            <label>Username:</label>
+        </div>
+        <div class="col">
+            <input asp-for="UserName" class="form-control" />
+        </div>
+        <div class="col">
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+    </div>
+    <!--Password-->
+    <div class="form-group row">
+        <div class="col">
+            <label>Password:</label>
+        </div>
+        <div class="col">
+            <input asp-for="Password" class="form-control" />
+        </div>
+        <div class="col">
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+    </div>
+    <!--Confirm Password-->
+    <div class="form-group row">
+        <div class="col">
+            <label>Confirm Password:</label>
+        </div>
+        <div class="col">
+            <input asp-for="ConfirmPassword" class="form-control" />
+        </div>
+        <div class="col">
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+    </div>
+    <!--Email-->
+    <div class="form-group row">
+        <div class="col">
+            <label>Email:</label>
+        </div>
+        <div class="col">
+            <input asp-for="Email" class="form-control" />
+        </div>
+        <div class="col">
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+    </div>
+    <!--Confirm Email-->
+    <div class="form-group row">
+        <div class="col">
+            <label>Confirm Email:</label>
+        </div>
+        <div class="col">
+            <input asp-for="ConfirmEmail" class="form-control" />
+        </div>
+        <div class="col">
+            <span asp-validation-for="ConfirmEmail" class="text-danger"></span>
+        </div>
+    </div>
+    <!--Phone-->
+    <div class="form-group row">
+        <div class="col">
+            <label>Phone Number:</label>
+        </div>
+        <div class="col">
+            <input asp-for="PhoneNumber" class="form-control" />
+        </div>
+        <div class="col">
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+    </div>
+    <!--Confirm Phone-->
+    <div class="form-group row">
+        <div class="col">
+            <label>Confirm Phone Number:</label>
+        </div>
+        <div class="col">
+            <input asp-for="PhoneNumberConfirmed" class="form-control" />
+        </div>
+        <div class="col">
+            <span asp-validation-for="PhoneNumberConfirmed" class="text-danger"></span>
+        </div>
+    </div>
+    <!--Submit Button-->
+    <button type="submit" class="btn btn-success">
+        Register
+    </button>
+    <!--Clear Form-->
+    <a asp-controller="User" asp-action="Register">Clear Form</a>
+</form>

@@ -7,69 +7,141 @@
     Layout = "_Layout";
 }
 <h3 style="text-align:center;">Character Detail View</h3>
-<div style="text-align:center;">
-    <h4>Name</h4>
-    <h6>@Model.CharacterName</h6>
-    <h4>Class</h4>
-    <h6>@Model.CharacterClass</h6>
-    <h4>Race</h4>
-    <h6>@Model.CharacterRace</h6>
-    <h4>Level</h4>
-    <h6>@Model.CharacterLevel</h6>
-    <h4>Background</h4>
-    <h6>@Model.CharacterBackground</h6>
-    <h4>Alignment</h4>
-    <h6>@Model.Alignment</h6>
-    <h4>Speed</h4>
-    <h6>@Model.SpeedVal</h6>
-    <h4>HP (Current/Max)</h4>
-    <h6>@Model.CurrentHealth</h6>
+<div style="text-align:center; margin:10%; margin-top:auto;">
+    <table class="table table-bordered table-striped" style="text-align:center;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Race</th>
+                <th>Level</th>
+                <th>Alignment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.CharacterName</td>
+                <td>@Model.CharacterClass</td>
+                <td>@Model.CharacterRace</td>
+                <td>@Model.CharacterLevel</td>
+                <td>@Model.Alignment</td>
+            </tr>
 
-    <h4>HP (Current/Temporary)</h4>
-    <h6>@Model.TemporaryHealth</h6>
-    <form asp-action="EditHealth" asp-route-id="@Model.CharacterId">
-        <input id="hp_id" name="hp" />
-        <button type="submit">Update</button>
-    </form>
-
-    <h4>XP</h4>
-    <h6>@Model.ExperiencePoints</h6>
-    <h4>Hit Die</h4>
-    <h6>@Model.HitDice</h6>
-    <h4>Strength</h4>
-    <h6>@Model.StrengthVal</h6>
-    <h4>Dexterity</h4>
-    <h6>@Model.DexterityVal</h6>
-    <h4>Constitution</h4>
-    <h6>@Model.ConstitutionVal</h6>
-    <h4>Intelligence</h4>
-    <h6>@Model.IntelligenceVal</h6>
-    <h4>Wisdom</h4>
-    <h6>@Model.WisdomVal</h6>
-    <h4>Charisma</h4>
-    <h6>@Model.CharismaVal</h6>
-    <h4>Inspiration</h4>
-    <h6>@Model.InspirationVal</h6>
-    <h4>Proficiency Bonus</h4>
-    <h6>@Model.ProficiencyBonusVal</h6>
-    <h4>Saving Throws</h4>
-    <h6>@Model.SavingThrows</h6>
-    <h4>Armor Class</h4>
-    <h6>@Model.ArmorClass</h6>
-    <h4>Initiative</h4>
-    <h6>@Model.InitiativeVal</h6>
-    <h4>Successful Death Saves</h4>
-    <h6>@Model.DeathSaveSuccess</h6>
-    <h4>Failed Death Saves</h4>
-    <h6>@Model.DeathSaveFailure</h6>
-    <h4>Personality Traits</h4>
-    <h6>@Model.PersonalityTraits</h6>
-    <h4>Ideals</h4>
-    <h6>@Model.Ideals</h6>
-    <h4>Bonds</h4>
-    <h6>@Model.Bonds</h6>
-    <h4>Flaws</h4>
-    <h6>@Model.Flaws</h6>
-    <h4>Additional Traits and Languages</h4>
-    <h6>@Model.Traits</h6>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-striped" style="text-align:center;">
+        <thead>
+            <tr>
+                <th>Background</th>
+                <th>Maximum Health</th>
+                <th>Current Health</th>
+                <th>Update Current Health</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.CharacterBackground</td>
+                <td>@Model.CurrentHealth</td>
+                <td>@Model.TemporaryHealth</td>
+                <td>
+                    <form asp-action="EditHealth" asp-route-id="@Model.CharacterId">
+                        <input id="hp_id" name="hp" />
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-striped" style="text-align:center;">
+        <thead>
+            <tr>
+                <th>Speed</th>
+                <th>XP</th>
+                <th>Hit Die</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.SpeedVal</td>
+                <td>@Model.ExperiencePoints</td>
+                <td>@Model.HitDice</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-striped" style="text-align:center;">
+        <thead>
+            <tr>
+                <th>Strength</th>
+                <th>Speed</th>
+                <th>Constitution</th>
+                <th>Intelligence</th>
+                <th>Wisdom</th>
+                <th>Charisma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.StrengthVal</td>
+                <td>@Model.SpeedVal</td>
+                <td>@Model.ConstitutionVal</td>
+                <td>@Model.IntelligenceVal</td>
+                <td>@Model.WisdomVal</td>
+                <td>@Model.CharismaVal</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-striped" style="text-align:center;">
+        <thead>
+            <tr>
+                <th>Inspiration</th>
+                <th>Proficiency</th>
+                <th>Saving Throws</th>
+                <th>Armor Class</th>
+                <th>Initiative</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.InspirationVal</td>
+                <td>@Model.ProficiencyBonusVal</td>
+                <td>@Model.SavingThrows</td>
+                <td>@Model.ArmorClass</td>
+                <td>@Model.InitiativeVal</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-striped" style="text-align:center;">
+        <thead>
+            <tr>
+                <th>Death Save Success</th>
+                <th>Death Save Failure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.DeathSaveSuccess</td>
+                <td>@Model.DeathSaveFailure</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-striped" style="text-align:center;">
+       <thead>
+           <tr>
+               <th>Personality Traits</th>
+               <th>Ideals</th>
+               <th>Bonds</th>
+               <th>Flaws</th>
+               <th>Additional Traits + Languages</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td>@Model.PersonalityTraits</td>
+               <td>@Model.Ideals</td>
+               <td>@Model.Bonds</td>
+               <td>@Model.Flaws</td>
+               <td>@Model.Traits</td>
+           </tr>
+       </tbody>
+   </table>
 </div>

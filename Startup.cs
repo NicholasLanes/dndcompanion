@@ -1,7 +1,9 @@
 using dnd.Models;
+using dnd.Models.Auth;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -37,6 +39,17 @@ namespace dnd
             });
             services.AddControllersWithViews().AddNewtonsoftJson();
             services.AddDbContext<CharacterContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CharacterContext")));
+
+            // Configuring Identity options
+            services.AddIdentity<User, IdentityRole>(options =>
+            {
+                // Password Configuration
+                options.Password.RequireUppercase = false; // Password does not require an uppercase character
+                options.Password.RequireLowercase = true; // Password requires a lowercase character
+                options.Password.RequireNonAlphanumeric = false; // Password does not require a non-alphanumeric character
+                options.Password.RequiredLength = 4; // Password required to be at least 5 characters in length
+
+            }).AddEntityFrameworkStores<CharacterContext>().AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,8 +68,12 @@ namespace dnd
             app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseAuthorization();
-            app.UseSession();
+
+            app.UseAuthentication(); // Enable Authentication
+            app.UseAuthorization(); // Enable Authorization
+
+            app.UseSession(); // Enable Session
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

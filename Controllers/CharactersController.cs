@@ -1,9 +1,12 @@
 ﻿using dnd.Models;
 using dnd.Models.Characters;
-using dnd.Models.Session;
+using dnd.Models.Auth;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
+using dnd.Models.Alignments;
+using dnd.Models.Classes;
+using dnd.Models.Races;
 
 namespace dnd.Controllers
 {
@@ -21,6 +24,57 @@ namespace dnd.Controllers
             // Pass the query into a list of characters
             List<Character> characters = query.ToList();
 
+            /*
+             * This section is a workaround, there was an issue
+             * where the select lists were passing an integer which
+             * is the id of the selected alignment as the name(aka value).
+             * This includes a simple integer check and will update the
+             * database to the correct values if it encounters any of
+             * these instances
+             */ 
+            // Declaring lists of potentially bugged properties
+            List<Alignment> alignments = Context.Alignments.ToList();
+            List<Class> classes = Context.Classes.ToList();
+            List<Race> races = Context.Races.ToList();
+
+            // for every character found in our query
+            foreach (Character character in characters)
+            {
+                // this defaults to fals so we don't spend time
+                // updating the context if all the values are accurate
+                bool isInteger = false;
+
+                // If the alignment comes back as int, sets isInteger == true
+                isInteger = int.TryParse(character.Alignment, out int i);
+                if(isInteger == true)
+                {
+                    Alignment alignment = new Alignment(); // Declare
+                    alignment = alignments.Where(x => x.Id == i).FirstOrDefault(); // Query
+                    character.Alignment = alignment.Name; // Assign
+                    Context.Characters.Update(character); // Update/Replace
+                    Context.SaveChangesAsync(); // Save
+                }
+                // If the class comes back as int, sets isInteger == true
+                isInteger = int.TryParse(character.CharacterClass, out i);
+                if (isInteger == true)
+                {
+                    Class c = new Class(); // Declare
+                    c = classes.Where(x => x.Id == i).FirstOrDefault(); // Query
+                    character.CharacterClass = c.Name; // Assign
+                    Context.Characters.Update(character); // Update/Replace
+                    Context.SaveChangesAsync(); // Save
+                }
+                // If the race comes back as int, sets isInteger == true
+                isInteger = int.TryParse(character.CharacterRace, out i);
+                if (isInteger == true)
+                {
+                    Race r = new Race(); // Declare
+                    r = races.Where(x => x.Id == i).FirstOrDefault(); // Query
+                    character.CharacterRace = r.Name; // Assign
+                    Context.Characters.Update(character); // Update/Replace
+                    Context.SaveChangesAsync(); // Save
+                }
+            }
             // Send these characters to the View
             return View(characters);
         }
@@ -29,9 +83,11 @@ namespace dnd.Controllers
         public IActionResult CreateCharacter()
         {
             // These viewbag properties are for the dropdowns on the createcharacter sheet
-            ViewBag.Alignments = Context.Alignments;
-            ViewBag.Classes = Context.Classes;
-            ViewBag.Races = Context.Races;
+            ViewBag.Alignments = Context.Alignments.ToList();
+            ViewBag.Classes = Context.Classes.ToList();
+            ViewBag.Races = Context.Races.ToList();
+            ViewBag.Abilities = Context.Abilities.ToList();
+            ViewBag.Skills = Context.Skills.ToList();
             return View();
         }
         // The CreateCharacter post action controls the addition of characters in the CreateCharacter view
@@ -43,7 +99,7 @@ namespace dnd.Controllers
             {
                 Context.Characters.Add(character);
                 Context.SaveChanges();
-                return View("Index");
+                return View("Detail", character);
             }
             return View(character);
         }
