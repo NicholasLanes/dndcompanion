@@ -278,7 +278,6 @@ B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\Razor\Views\Character
 B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\Razor\Views\Characters\Detail.cshtml.g.cs
 B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\Razor\Views\Characters\Index.cshtml.g.cs
 B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\Razor\Views\Home\Dice.cshtml.g.cs
-B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
@@ -292,3 +291,4 @@ B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\dnd.pdb
 B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\dnd.genruntimeconfig.cache
 B:\Nick\Documents\MyPrograms\dndcompanion\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\Razor\Views\Shared\CreateUser.cshtml.g.cs
+B:\Nick\Documents\MyPrograms\dndcompanion\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs

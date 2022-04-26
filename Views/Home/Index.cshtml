@@ -64,7 +64,11 @@ else
 {
     <div style="text-align:center;">
         <h4>You are already logged in!</h4>
-        <h6><a asp-action="Logout">Click Here to Log Out.</a></h6>
+        <form method="post" asp-controller="User"asp-action="Logout">
+            <div class="form-group">
+                <button type="submit" class="btn btn-dark">Sign Out</button>
+            </div>
+        </form>
         <h6><a asp-route-controller="Characters" asp-action="Index">Click Here to View and Create Characters.</a></h6>
     </div>
 }

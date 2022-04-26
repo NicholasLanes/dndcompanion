@@ -80,12 +80,11 @@ namespace dnd.Controllers
             return View("Index",model);
             
         }
-
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index","Home");
         }
     }
 }
