@@ -32,6 +32,7 @@ namespace dnd.Controllers
              * database to the correct values if it encounters any of
              * these instances
              */ 
+
             // Declaring lists of potentially bugged properties
             List<Alignment> alignments = Context.Alignments.ToList();
             List<Class> classes = Context.Classes.ToList();
@@ -40,8 +41,7 @@ namespace dnd.Controllers
             // for every character found in our query
             foreach (Character character in characters)
             {
-                // this defaults to fals so we don't spend time
-                // updating the context if all the values are accurate
+                // this defaults to false so we don't spend time updating the context if all the values are accurate
                 bool isInteger = false;
 
                 // If the alignment comes back as int, sets isInteger == true
@@ -54,6 +54,7 @@ namespace dnd.Controllers
                     Context.Characters.Update(character); // Update/Replace
                     Context.SaveChangesAsync(); // Save
                 }
+
                 // If the class comes back as int, sets isInteger == true
                 isInteger = int.TryParse(character.CharacterClass, out i);
                 if (isInteger == true)
@@ -64,6 +65,7 @@ namespace dnd.Controllers
                     Context.Characters.Update(character); // Update/Replace
                     Context.SaveChangesAsync(); // Save
                 }
+
                 // If the race comes back as int, sets isInteger == true
                 isInteger = int.TryParse(character.CharacterRace, out i);
                 if (isInteger == true)
@@ -123,7 +125,7 @@ namespace dnd.Controllers
             Character character = Context.Characters.Where(x => x.CharacterLevel > 0 && x.CharacterId == id).FirstOrDefault();
             if (ModelState.IsValid && character != null)
             {
-                character.TemporaryHealth = hp;
+                character.TemporaryHealth = hp; 
                 Context.Characters.Update(character);
                 Context.SaveChanges();
                 return View("Detail", character);

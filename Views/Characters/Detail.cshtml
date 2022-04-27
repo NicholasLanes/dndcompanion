@@ -6,11 +6,11 @@
     ViewBag.SubHeading = "Detail View";
     Layout = "_Layout";
 }
-<h3 style="text-align:center;">Character Detail View</h3>
+<div style="text-align:center; margin-top:10px;">
+    <h1>@Model.CharacterName</h1>
+    <h3>@(Model.CharacterClass + " - " + Model.CharacterRace)</h3>
+</div>
 <div style="text-align:center; margin:10%; margin-top:auto;">
-    <form asp-action="DeleteCharacter" asp-route-id="@Model.CharacterId">
-        <button type="submit">DELETE CHARACTER</button>
-    </form>
     <table class="table table-bordered table-striped" style="text-align:center;">
         <thead>
             <tr>
@@ -166,4 +166,10 @@
            </tr>
        </tbody>
    </table>
+   <form asp-action="DeleteCharacter" asp-route-id="@Model.CharacterId">
+        <button class="btn btn-dark"type="submit" style="margin:10px;">
+            DELETE CHARACTER
+        </button>
+    </form>
+    <label>Note: Deleting a Character is Permanent</label>
 </div>

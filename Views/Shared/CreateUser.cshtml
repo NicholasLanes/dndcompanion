@@ -9,7 +9,7 @@
 <!--Error Validation Summary-->
 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 <!--Begin Register Form-->
-<form method="post" asp-controller="User" asp-action="Register">
+<form method="post" asp-controller="User" asp-action="Register" style="justify-content:center;">
     <!--First Name-->
     <div class="form-group row">
         <div class="col">
@@ -118,10 +118,12 @@
             <span asp-validation-for="PhoneNumberConfirmed" class="text-danger"></span>
         </div>
     </div>
-    <!--Submit Button-->
-    <button type="submit" class="btn btn-success">
-        Register
-    </button>
-    <!--Clear Form-->
-    <a asp-controller="User" asp-action="Register">Clear Form</a>
+    <div style="text-align:left;">
+        <!--Submit Button-->
+        <button type="submit" class="btn btn-success">
+            Register
+        </button>
+        <!--Clear Form-->
+        <a asp-controller="Home" asp-action="CreateUser">Clear Form</a>
+    </div>
 </form>

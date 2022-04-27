@@ -370,3 +370,4 @@ C:\Users\krebs\source\dndcompanionfinal\obj\Debug\net5.0\dnd.dll
 C:\Users\krebs\source\dndcompanionfinal\obj\Debug\net5.0\ref\dnd.dll
 C:\Users\krebs\source\dndcompanionfinal\obj\Debug\net5.0\dnd.pdb
 C:\Users\krebs\source\dndcompanionfinal\obj\Debug\net5.0\dnd.genruntimeconfig.cache
+B:\Nick\Documents\MyPrograms\dndcompanion\bin\Debug\net5.0\dnd.StaticWebAssets.xml

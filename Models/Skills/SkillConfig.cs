@@ -7,8 +7,8 @@ namespace dnd.Models.Skills
     {
         public void Configure(EntityTypeBuilder<Skill> entity)
         {
-            entity.HasKey(k => k.Id); // Primary key for each Race is the Id attribute
-            entity.HasData( // Seeding Race options
+            entity.HasKey(k => k.Id);
+            entity.HasData( 
                 new Skill { Id = 1, Name = "Acrobatics", AbilityModifier="Dexterity" },
                 new Skill { Id = 2, Name = "Animal Handling", AbilityModifier="Wisdom" },
                 new Skill { Id = 3, Name = "Arcana", AbilityModifier="Intelligence"},

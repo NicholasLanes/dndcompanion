@@ -6,65 +6,64 @@
     ViewBag.SubHeading = "Home Page";
     Layout = "_Layout";
 }
-<!-- This Div hides the content from the view by setting 'Display: none'
-    If Controller finds an active session, sets the ViewData["DisplayNone"] to "none" -->
-
-
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<User> signInManager
 @if (!signInManager.IsSignedIn(User))
 {
-    <!-- Error Validation Summary -->
+    <div class="text-center;" style="border:1px dashed;padding:20px;">
+        <h4 style="text-align:center;">Sign In</h4>
+        <!-- Error Validation Summary -->
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    <!-- Begin Login Form -->
+        <!-- Begin Login Form -->
     <form method="post" asp-controller="User" asp-action="Login">
-    <!-- Username -->
-    <div class="form-group row">
-        <div class="col">
-            <label>Username:</label>
-            <div class="col">
-                <input asp-for="UserName" class="form-control" />
+            <!-- Username -->
+        <div class="form-group row">
+                <div class="col">
+                    <label>Username:</label>
+                    <div class="col">
+                        <input asp-for="UserName" class="form-control" />
+                    </div>
+                    <div class="col">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <span asp-validation-for="UserName" class="text-danger"></span>
+            <!-- Password -->
+        <div class="form-group row">
+                <div class="col">
+                    <label>Password:</label>
+                    <div class="col">
+                        <input asp-for="Password" class="form-control" />
+                    </div>
+                    <div class="col">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- Password -->
-    <div class="form-group row">
-        <div class="col">
-            <label>Password:</label>
-            <div class="col">
-                <input asp-for="Password" class="form-control" />
+            <!-- Remember Me -->
+        <div class="form-group row" style="justify-content:center; margin-bottom:1px;">
+                <label>Remember Me?</label>
             </div>
-            <div class="col">
-                <span asp-validation-for="Password" class="text-danger"></span>
+            <div class="form-group row" style="justify-content:center;">
+                <input type="checkbox" title="Remember Me" asp-for="RememberMe" class="form-check" />
             </div>
-        </div>
-    </div>
-    <!-- Remember Me -->
-    <div class="form-group row" style="justify-content:center; margin-bottom:1px;">
-        <label>Remember Me?</label>
-    </div>
-    <div class="form-group row" style="justify-content:center;">
-            <input type="checkbox" title="Remember Me" asp-for="RememberMe" class="form-check" />
-    </div>
-    <div class="form-group-row" style="text-align:center; margin-bottom:10px;">
-            <button class="btn btn-success"type="submit">Sign In</button>
-    </div>
-    </form>
-    <!--Link to the CreateUser View-->
+            <div class="form-group-row" style="text-align:center; margin-bottom:10px;">
+                <button class="btn btn-success" type="submit">Sign In</button>
+            </div>
+        </form>
+        <!--Link to the CreateUser View-->
     <h6 style="text-align:center;">
-        <a asp-action="CreateUser">
-            Don't Have a Profile? Click Here to Create a User Profile
-        </a>
-    </h6>
+            <a asp-action="CreateUser">
+                Don't Have a Profile? Click Here to Create a User Profile
+            </a>
+        </h6>
+    </div>
 }
 else
 {
     <div style="text-align:center;">
-        <h4>You are already logged in!</h4>
-        <form method="post" asp-controller="User"asp-action="Logout">
+        <h4>You are currently signed in.</h4>
+        <form method="post" asp-controller="User" asp-action="Logout">
             <div class="form-group">
                 <button type="submit" class="btn btn-dark">Sign Out</button>
             </div>

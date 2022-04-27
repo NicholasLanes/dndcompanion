@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace dnd.Models
 {
-    public class CharacterContext : IdentityDbContext<User>
+    public class CharacterContext : IdentityDbContext<User> // Inherits identity user tables and functionality
     {
         // importing database context options
         public CharacterContext(DbContextOptions<CharacterContext> options) : base(options) { }
@@ -21,7 +21,6 @@ namespace dnd.Models
         public DbSet<Ability> Abilities { get; set; }
         public DbSet<Skill> Skills { get; set; }
 
-        // overriding OnModelCreating method which accepts a ModelBuilder object
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Calling the ApplyConfiguration class to import data from respective config classes
@@ -33,7 +32,5 @@ namespace dnd.Models
             modelBuilder.ApplyConfiguration(new SkillConfig());
 
         }
-
-
     }
 }
