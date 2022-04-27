@@ -73,6 +73,7 @@
                 <th>Speed</th>
                 <th>XP</th>
                 <th>Edit XP</th>
+                <th>Level</th>
                 <th>Hit Die</th>
             </tr>
         </thead>
@@ -86,6 +87,7 @@
                         <button type="submit">Update</button>
                     </form>
                 </td>
+                <td>@(Model.ExperiencePoints / 10)</td>
                 <td>@Model.HitDice</td>
             </tr>
         </tbody>
