@@ -39,8 +39,8 @@
                 <th>Maximum Health</th>
                 <th>Current Health</th>
                 <th>Update Current Health</th>
-@*                <th>Current Gold</th>
-                <th>Update Current Gold</th>*@
+                <th>Current Gold</th>
+                <th>Update Current Gold</th>
             </tr>
         </thead>
         <tbody>
@@ -54,9 +54,7 @@
                         <button type="submit">Update</button>
                     </form>
                 </td>
-            </tr>
-            @*<tr>
-                <td>@Model.CharacterBackground</td>
+
                 <td>@Model.CurrentGold</td>
                 <td>
                     <form asp-action="EditGold" asp-route-id="@Model.CharacterId">
@@ -64,7 +62,7 @@
                         <button type="submit">Update</button>
                     </form>
                 </td>
-            </tr>*@
+            </tr>
         </tbody>
     </table>
     <table class="table table-bordered table-striped" style="text-align:center;">
@@ -105,12 +103,12 @@
         </thead>
         <tbody>
             <tr>
-                <td>@Model.StrengthVal</td>
-                <td>@Model.SpeedVal</td>
-                <td>@Model.ConstitutionVal</td>
-                <td>@Model.IntelligenceVal</td>
-                <td>@Model.WisdomVal</td>
-                <td>@Model.CharismaVal</td>
+                <td>@(Model.StrengthVal + (@Model.ExperiencePoints / 10) * 1.5)</td>
+                <td>@(Model.SpeedVal + (@Model.ExperiencePoints / 10) * 1.5)</td>
+                <td>@(Model.ConstitutionVal + (@Model.ExperiencePoints / 10) * 1.5)</td>
+                <td>@(Model.IntelligenceVal + (@Model.ExperiencePoints / 10) * 1.5)</td>
+                <td>@(Model.WisdomVal + (@Model.ExperiencePoints / 10) * 1.5)</td>
+                <td>@(Model.CharismaVal + (@Model.ExperiencePoints / 10) * 1.5)</td>
             </tr>
         </tbody>
     </table>
