@@ -125,7 +125,11 @@ namespace dnd.Controllers
             Character character = Context.Characters.Where(x => x.CharacterLevel > 0 && x.CharacterId == id).FirstOrDefault();
             if (ModelState.IsValid && character != null)
             {
-                character.TemporaryHealth = hp; 
+                character.TemporaryHealth = hp;
+                if (character.TemporaryHealth > character.CurrentHealth)
+                {
+                    character.CurrentHealth = character.TemporaryHealth;
+                }
                 Context.Characters.Update(character);
                 Context.SaveChanges();
                 return View("Detail", character);
@@ -139,6 +143,19 @@ namespace dnd.Controllers
             if (ModelState.IsValid && character != null)
             {
                 character.ExperiencePoints = xp;
+                Context.Characters.Update(character);
+                Context.SaveChanges();
+                return View("Detail", character);
+            }
+            return RedirectToAction("Index");
+
+        }
+        public IActionResult EditGold(int id, int gp)
+        {
+            Character character = Context.Characters.Where(x => x.CharacterLevel > 0 && x.CharacterId == id).FirstOrDefault();
+            if (ModelState.IsValid && character != null)
+            {
+                character.CurrentGold = gp;
                 Context.Characters.Update(character);
                 Context.SaveChanges();
                 return View("Detail", character);
