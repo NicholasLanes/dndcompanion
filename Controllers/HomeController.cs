@@ -14,6 +14,7 @@ namespace dnd.Controllers
         private CharacterContext Context { get; set; }
         public HomeController(CharacterContext ctx) { Context = ctx; }
 
+
         public IActionResult Index(string id)
         {
             return View();
@@ -25,9 +26,12 @@ namespace dnd.Controllers
             return View("CreateUser");
         }
 
-        public IActionResult Dice()
+        public IActionResult Dice(int id)
         {
-            return View();
+            Dice d = new Dice();
+            Random r = new Random();
+            d.rollResult = r.Next(1,12);
+            return View("Dice",d);
         }
     }
 }

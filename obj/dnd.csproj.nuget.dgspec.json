@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krebs\\source\\dndcompanionfinal\\dnd.csproj": {}
+    "C:\\Users\\skyle\\source\\repos\\dnd\\dnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krebs\\source\\dndcompanionfinal\\dnd.csproj": {
+    "C:\\Users\\skyle\\source\\repos\\dnd\\dnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krebs\\source\\dndcompanionfinal\\dnd.csproj",
+        "projectUniqueName": "C:\\Users\\skyle\\source\\repos\\dnd\\dnd.csproj",
         "projectName": "dnd",
-        "projectPath": "C:\\Users\\krebs\\source\\dndcompanionfinal\\dnd.csproj",
-        "packagesPath": "C:\\Users\\krebs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krebs\\source\\dndcompanionfinal\\obj\\",
+        "projectPath": "C:\\Users\\skyle\\source\\repos\\dnd\\dnd.csproj",
+        "packagesPath": "C:\\Users\\skyle\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\skyle\\source\\repos\\dnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\krebs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\skyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

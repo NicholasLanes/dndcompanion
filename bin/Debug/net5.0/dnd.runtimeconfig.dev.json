@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\krebs\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\krebs\\.nuget\\packages"
+      "C:\\Users\\skyle\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\skyle\\.nuget\\packages"
     ]
   }
 }
