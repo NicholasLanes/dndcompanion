@@ -1,6 +1,6 @@
-﻿@*
+﻿@model Dice;
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+
 @{
     // Use these ViewBag values to change the header for the page
     ViewBag.Heading = "Dungeons and Dragons Companion: Final Project";
@@ -9,8 +9,12 @@
 }
 <!DOCTYPE html>
 <html>
-    <!--Body section | Beginning of visible page content-->
-    <body>
-        
-    </body>
+<!--Body section | Beginning of visible page content-->
+<body>
+    <form asp-action="DiceRoll" asp-route-id="@Model.RollCount">
+        <input id="id" name="id" type="hidden" /> 
+        <button type="submit">Roll</button>
+        <label>@Model.rollResult</label>
+    </form>
+</body>
 </html>
